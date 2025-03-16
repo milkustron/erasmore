@@ -1,4 +1,4 @@
-{ Preparation, Trip day, Settling in, Settled and Departure.
+{
     "todo": [
     {
       "id": 1,
@@ -16,14 +16,14 @@
     },
     {
       "id": 3,
-      "stage": "Settling in",
+      "stage": "Settled",
       "task": "Schedule an appointment for empadronamiento",
       "link": " https://www.laspalmasgc.es/es/otras-secciones/cita-previa/",
       "description": ""
     },
     {
       "id": 4,
-      "stage": "Settling in",
+      "stage": "Settled",
       "task": "Prepare the necessary documents for empadronamiento",
       "link": "https://sedeelectronica.laspalmasgc.es/web/fichaAsunto.do?opcion=0&asas_ide_asu=857&ruta=/web/asuntosMasUsuales.do?opcion",
       "description": ""
@@ -95,6 +95,97 @@
       "stage": "Preparation",
       "task": "Find interesting accommodation offers",
       "link": "https://internacional.ulpgc.es/en/movilidad-incoming/estudiantes-incoming/study-at-the-ulpgc-incoming/exchange-students/accommodation/",
+      "description": ""
+    },
+    {
+      "id": 16,
+      "stage": "Trip day",
+      "task": "Check the best transport connections to your place of residence",
+      "link": "https://www.grancanaria.com/turismo/en/create-your-own-holiday/around-the-island/have-you-just-arrived-at-gran-canaria/",
+      "description": ""
+    },
+    {
+      "id": 17,
+      "stage": "Trip day",
+      "task": "Contact the landlord or the reception of your accommodation",
+      "description": ""
+    },
+    {
+      "id": 18,
+      "stage": "Settled",
+      "task": "Follow local organizator of erasmus acitivities: ESN",
+      "link": "linktr.ee/ESNLasPalmas",
+      "description": ""
+    },
+    {
+      "id": 19,
+      "stage": "Settled",
+      "task": "Follow local organizator of erasmus acitivities: Erasmus Life",
+      "link": "linktr.ee/erasmuslifelaspalmas",
+      "description": ""
+    },
+    {
+      "id": 20,
+      "stage": "Settled",
+      "task": "Apply for free public transport: Wawa Joven or Bono Residente",
+      "link": "https://www.guaguas.com/tarifas-carnets",
+      "description": ""
+    },
+    {
+      "id": 21,
+      "stage": "Settled",
+      "task": "Apply for a residential discount for travel",
+      "link": "https://www.laspalmasgc.es/es/ayuntamiento/certificados/",
+      "description": ""
+    },
+    {
+      "id": 22,
+      "stage": "Departure",
+      "task": "Submit the certificate of attendance template to the university if a specific one is required",
+      "description": ""
+    },
+    {
+      "id": 23,
+      "stage": "Departure",
+      "task": "Collect the certificate of attendance from the coordinator and submit it to your home university",
+      "description": ""
+    },
+    {
+      "id": 24,
+      "stage": "Preparation",
+      "task": "Verify the necessity of applying for a visa in your case", 
+      "link": "https://www.exteriores.gob.es/Embajadas/seul/en/ServiciosConsulares/Paginas/Consular/Visados-nacionales-Informacion-general.aspx",
+      "description": ""
+    },
+    {
+      "id": 25,
+      "stage": "Preparation",
+      "task": "Sign the grant agreement at your home university",
+      "description": ""
+    },
+    {
+      "id": 26,
+      "stage": "Preparation",
+      "task": "Polish your skills in the language of your erasmus studies",
+      "link": "https://erasmus-plus.ec.europa.eu/resources-and-tools/online-language-support",
+      "description": ""
+    },
+    {
+      "id": 27,
+      "stage": "Settling in",
+      "task": "Make changes to the Learning Agreement if necessary",
+      "description": ""
+    },
+    {
+      "id": 28,
+      "stage": "Departure",
+      "task": "Collect the Transcript of Records from the host university",
+      "description": ""
+    },
+    {
+      "id": 29,
+      "stage": "Departure",
+      "task": "Submit the Transcript of Records to your home university",
       "description": ""
     }
   ]
