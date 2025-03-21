@@ -1,17 +1,36 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-title>Progress</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <!-- Container for the wave + buttons -->
+  <div class="stage-container">
+    <!-- The SVG that draws a vertical sinusoidal path -->
+    <svg class="wave" viewBox="0 0 200 600" preserveAspectRatio="none">
+      <!-- 
+        M 100 0     : Move to x=100, y=0
+        C 180 100 20 200 100 300  : First cubic curve
+        C 180 400 20 500 100 600  : Second cubic curve
+      -->
+      <path
+        d="M 100 40
+           C 280 200 20 200 100 300
+           C 280 400 20 450 100 500"
+        stroke="#666"
+        stroke-width="3"
+        fill="none"
+        stroke-dasharray="5,5"  
+      />
+    </svg>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <!-- Five circular buttons placed along the wave -->
+    <!-- Tweak the top/left values to place them exactly where you want on the curve -->
+    <ion-button class="stage-button" [class.active]="selectedStage === 1" style="top:  30px;  left: 100px;" (click)="onStageClick(1)">1</ion-button>
+    <ion-button class="stage-button" [class.active]="selectedStage === 2" style="top: 150px; left:  160px;" (click)="onStageClick(2)">2</ion-button>
+    <ion-button class="stage-button" [class.active]="selectedStage === 3" style="top: 270px; left: 85px;" (click)="onStageClick(3)">3</ion-button>
+    <ion-button class="stage-button" [class.active]="selectedStage === 4" style="top: 390px; left:  150px;" (click)="onStageClick(4)">4</ion-button>
+    <ion-button class="stage-button" [class.active]="selectedStage === 5" style="top: 510px; left: 100px;" (click)="onStageClick(5)">5</ion-button>
+  </div>
 </ion-content>

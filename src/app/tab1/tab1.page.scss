@@ -1,0 +1,41 @@
+.stage-container {
+    position: relative;
+    /* You can adjust width/height or use responsive units as needed */
+    width: 200px;
+    height: 600px;
+    margin: 0 auto; /* Center horizontally on the page */
+    margin-top: 100px;
+  }
+  
+  /* The SVG wave itself */
+  .wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 600px;
+  }
+  
+  /* Buttons inherit the “circular” style from your previous code,
+     but now we set them to absolute so we can place them anywhere */
+  .stage-button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 18px;
+    --box-shadow: 0 2px 6px 0 rgb(164, 183, 255);
+    --border-radius: 50%;
+    /* Example background color (primary) */
+    background-color: var(--ion-color-primary);
+    color: #fff;
+  }
+  
+  /* Active (selected) stage styling */
+.stage-button.active {
+    /* For example, a highlighted outline or color change */
+    border: 3px solid #fff;
+    background-color: var(--ion-color-primary-shade);
+    box-shadow: 0 0 10px var(--ion-color-primary);
+  }

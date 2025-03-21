@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class Tab1Page {
-
+  selectedStage: number = 1;
   constructor() {}
-
+  onStageClick(stage: number) {
+    this.selectedStage = stage;
+  }
 }
