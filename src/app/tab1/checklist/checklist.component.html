@@ -3,7 +3,9 @@
 </ion-card-header-->
 <ion-card-content>
   <ion-item>
-    <ion-checkbox slot="start"></ion-checkbox>
-    <ion-label>{{checklistItem?.task}}</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-label (click)="showDetails()">{{checklistItem.task}}</ion-label>
   </ion-item>
 </ion-card-content>
+
+<app-details *ngIf="isDetailsVisible" (close)="hideDetails()" [link]="checklistItem.link" [description]="checklistItem.description + checklistItem.task"></app-details>

@@ -1,27 +1,28 @@
-import { Component, inject, Input } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';  
 import { IonicModule } from '@ionic/angular';
-import { StageNameService } from '../../services/stage-name.service';
-import { ChecklistService } from 'src/app/services/checklist.service';
 import { ChecklistItem } from './checklist-item';
+import { DetailsComponent } from './details/details.component';
 
 @Component({
   selector: 'app-checklist',
-  standalone: true,
-  imports: [IonicModule],
+  imports: [IonicModule, DetailsComponent, CommonModule],
   templateUrl: './checklist.component.html',
   styleUrls: ['./checklist.component.scss']
 })
 export class ChecklistComponent {
   @Input() stage: number = 0;
-
   @Input() checklistItem!: ChecklistItem;
   
+  constructor() {}
 
-  constructor() {
-    
+  isDetailsVisible = false;
+
+  showDetails() {
+	  this.isDetailsVisible = true;
   }
 
-  // get stageName(): string {
-  //   return this.stageNameService.getStageName(this.stage);
-  // }
+  hideDetails() {
+	  this.isDetailsVisible = false;
+  }
 }
