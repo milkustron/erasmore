@@ -3,7 +3,7 @@
 </ion-card-header-->
 <ion-card-content>
   <ion-item>
-      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-checkbox slot="start" (ionChange)="onCheckboxChange()"></ion-checkbox>
       <ion-label (click)="showDetails()">{{checklistItem.task}}</ion-label>
   </ion-item>
 </ion-card-content>
