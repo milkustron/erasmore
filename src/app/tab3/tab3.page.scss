@@ -1,0 +1,35 @@
+ion-content {
+    --padding-top: 8px;
+  }
+  
+  ion-segment {
+    margin-bottom: 16px;
+  }
+  
+  ion-item {
+    --padding-start: 8px;
+    --inner-padding-end: 8px;
+    margin-bottom: 12px;
+    
+    ion-avatar {
+      width: 80px;
+      height: 80px;
+      margin-right: 12px;
+    }
+    
+    h2 {
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    
+    p {
+      color: var(--ion-color-medium);
+      margin-bottom: 4px;
+      font-size: 14px;
+    }
+    
+    ion-icon {
+      vertical-align: middle;
+      margin-right: 4px;
+    }
+  }
