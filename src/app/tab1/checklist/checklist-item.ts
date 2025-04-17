@@ -2,6 +2,6 @@ export interface ChecklistItem {
     id: number;
     stage: string;
     task: string;
-    link: string | undefined;
+    link?: string;
     description: string;
 }

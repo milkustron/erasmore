@@ -33,10 +33,14 @@ export class Tab1Page {
     this.selectedStage = stage;
     this.isCollapsed = true;
     const stageName = this.stageNameService.getStageName(this.selectedStage);
-    this.checklistService.getChecklistByStage(stageName).then((checklist: ChecklistItem[]) => {
+  // when using json server
+    //   this.checklistService.getChecklistByStage(stageName).then((checklist: ChecklistItem[]) => {
+  //   this.checklist = checklist;
+  //   this.checkboxCounter = 0;
+  // });
+    const checklist = this.checklistService.getChecklistByStage(stageName);
     this.checklist = checklist;
-    this.checkboxCounter = 0;
-  });
+    this.checkboxCounter = 0
   }
 
   getStageName(stage: number): string {
