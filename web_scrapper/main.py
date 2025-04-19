@@ -29,28 +29,39 @@ def fetch_activities():
         experiences_soup = BeautifulSoup(experiences_file, "html.parser")
         list_elements = experiences_soup.find_all(class_="product")
         for activity in list_elements:
-            fetch_activity(activity)
+            activity_name = activity.find("h2").text.replace(':', ' -')
+            activity_link = activity.find("a")
+
+            print(f"Saving: {activity_name}...")
+            storage_path = f"{RAW_DATA_FOLDER}/{activity_name}"
+            if not os.path.exists(storage_path):
+                os.makedirs(storage_path)
+            activity_url = activity_link.attrs.get("href")
+            save_request_to_file(activity_url, f"{storage_path}/activity.html")
+
             time_wait = random.random() * 120
             print(f"Sleeping for {time_wait}s...")
             time.sleep(time_wait)
+    
 
+def fetch_thumbnails():
+    with open(f"{RAW_DATA_FOLDER}/experiences.html", encoding="utf-8") as experiences_file:
+        experiences_soup = BeautifulSoup(experiences_file, "html.parser")
+        list_elements = experiences_soup.find_all(class_="product")
+        for activity in list_elements:
+            activity_name = activity.find("h2").text.replace(':', ' -')
+            thumbnail = activity.find("img")
+            thumbnail_src = thumbnail.attrs.get("src")
+            
+            print(f"Saving: {activity_name}...")
+            storage_path = f"{RAW_DATA_FOLDER}/{activity_name}"
+            if not os.path.exists(storage_path):
+                os.makedirs(storage_path)
+            request.urlretrieve(thumbnail_src, f"{storage_path}/thumbnail.png")
 
-def fetch_activity(activity):
-    activity_name = activity.find("h2").text.replace(':', ' -')
-    activity_link = activity.find("a")
-    thumbnail = activity.find("img")
-
-    print(f"Saving: {activity_name}...")
-
-    storage_path = f"{RAW_DATA_FOLDER}/{activity_name}"
-    if not os.path.exists(storage_path):
-        os.makedirs(storage_path)
-
-    thumbnail_src = thumbnail.attrs.get("src")
-    request.urlretrieve(thumbnail_src, f"{storage_path}/thumbnail.png")
-
-    activity_url = activity_link.attrs.get("href")
-    save_request_to_file(activity_url, f"{storage_path}/activity.html")
+            time_wait = random.random() * 120
+            print(f"Sleeping for {time_wait}s...")
+            time.sleep(time_wait)
 
 
 def parse_activities():
@@ -63,7 +74,7 @@ def parse_activities():
                 activity_soup = BeautifulSoup(activity_file, "html.parser")
                 activities_dict[activity_name]["description_fields"] = parse_activity_data(activity_soup)
                 activities_dict[activity_name]["tags"] = parse_activity_tags(activity_soup)
-                activities_dict[activity_name]["gallery"] = fetch_activity_gallery(activity_soup, activity_path)
+                activities_dict[activity_name]["gallery"] = parse_activity_gallery_links(activity_soup, activity_path)
     with open(f"{DATA_FOLDER}/activities.json", "w+", encoding="utf-8") as activities_json:
         json.dump(activities_dict, activities_json, indent=4)
 
@@ -146,33 +157,55 @@ def parse_activity_tags(activity_soup) -> List[str]:
     return [link.text for link in tag_container.find_all("a")]
 
 
-def fetch_activity_gallery(activity_soup, activity_path) -> List[str]:
+def parse_activity_gallery_links(activity_soup, activity_path) -> List[str]:
     gallery_container = activity_soup.find("div", class_="woocommerce-product-gallery")
     gallery_imgs = gallery_container.find_all("img")
     gallery_img_containers = activity_soup.find_all("div", class_="woocommerce-product-gallery__image")
     gallery_img_links = [img["src"] for img in gallery_imgs]
     gallery_img_links += [container["data-thumb"] for container in gallery_img_containers]
-
     gallery_img_folder = f"{activity_path}/assets"
-    if not os.path.exists(gallery_img_folder):
-        os.makedirs(gallery_img_folder)
-
     gallery_images = list()
     for link in gallery_img_links:
         img_name = link.split("/")[-1]
         path_to_img = f"{gallery_img_folder}/{img_name}"
         gallery_images.append(path_to_img)
-
-        # print(f"Fetching: {img_name} ...")
-        # request.urlretrieve(link, path_to_img)
-        # time_wait = random.random() * 60
-        # print(f"Sleeping for {time_wait}s...")
-        # time.sleep(time_wait)
-
     return gallery_images
 
 
+def fetch_activity_gallery_images():
+    activities_dict = dict()
+    for activity_name in os.listdir(RAW_DATA_FOLDER):
+        activity_path = f"{RAW_DATA_FOLDER}/{activity_name}"
+        if os.path.isdir(activity_path):
+            with open(f"{activity_path}/activity.html", encoding="utf-8") as activity_file:
+                activity_soup = BeautifulSoup(activity_file, "html.parser")
+                gallery_container = activity_soup.find("div", class_="woocommerce-product-gallery")
+                gallery_imgs = gallery_container.find_all("img")
+                gallery_img_containers = activity_soup.find_all("div", class_="woocommerce-product-gallery__image")
+                gallery_img_links = [img["src"] for img in gallery_imgs]
+                gallery_img_links += [container["data-thumb"] for container in gallery_img_containers]
+
+                gallery_img_folder = f"{activity_path}/assets"
+                if not os.path.exists(gallery_img_folder):
+                    os.makedirs(gallery_img_folder)
+
+                for link in gallery_img_links:
+                    img_name = link.split("/")[-1]
+                    path_to_img = f"{gallery_img_folder}/{img_name}"
+                    print(f"Fetching: {img_name} ...")
+                    request.urlretrieve(link, path_to_img)
+                    time_wait = random.random() * 60
+                    print(f"Sleeping for {time_wait}s...")
+                    time.sleep(time_wait)
+
+
 if __name__ == '__main__':
+    # These functions fetch data from the website
+
     # fetch_experiences()
     # fetch_activities()
-    parse_activities()
+    # fetch_thumbnails()
+    # fetch_activity_gallery_images()
+
+    # This generates json from all the downloaded html
+    generate_activity_json()
