@@ -24,7 +24,7 @@ def fetch_experiences():
     save_request_to_file(EXPERIENCES_URL, f"{WEB_DATA_FOLDER}/experiences.html")
 
 
-def fetch_activities():
+def fetch_activities(time_between_downloads=60):
     with open(f"{WEB_DATA_FOLDER}/experiences.html", encoding="utf-8") as experiences_file:
         experiences_soup = BeautifulSoup(experiences_file, "html.parser")
         list_elements = experiences_soup.find_all(class_="product")
@@ -39,12 +39,12 @@ def fetch_activities():
             activity_url = activity_link.attrs.get("href")
             save_request_to_file(activity_url, f"{storage_path}/activity.html")
 
-            time_wait = random.random() * 120
+            time_wait = random.random() * time_between_downloads
             print(f"Sleeping for {time_wait}s...")
             time.sleep(time_wait)
     
 
-def fetch_thumbnails():
+def fetch_thumbnails(time_between_downloads=60):
     with open(f"{WEB_DATA_FOLDER}/experiences.html", encoding="utf-8") as experiences_file:
         experiences_soup = BeautifulSoup(experiences_file, "html.parser")
         list_elements = experiences_soup.find_all(class_="product")
@@ -59,36 +59,52 @@ def fetch_thumbnails():
                 os.makedirs(storage_path)
             request.urlretrieve(thumbnail_src, f"{storage_path}/thumbnail.png")
 
-            time_wait = random.random() * 120
+            time_wait = random.random() * time_between_downloads
             print(f"Sleeping for {time_wait}s...")
             time.sleep(time_wait)
 
 
-def fetch_activity_gallery_images():
+def fetch_activity_gallery_images(time_between_downloads=60):
     activities_dict = dict()
     for activity_name in os.listdir(WEB_DATA_FOLDER):
         activity_path = f"{WEB_DATA_FOLDER}/{activity_name}"
         if os.path.isdir(activity_path):
             with open(f"{activity_path}/activity.html", encoding="utf-8") as activity_file:
                 activity_soup = BeautifulSoup(activity_file, "html.parser")
+
                 gallery_container = activity_soup.find("div", class_="woocommerce-product-gallery")
-                gallery_imgs = gallery_container.find_all("img")
                 gallery_img_containers = activity_soup.find_all("div", class_="woocommerce-product-gallery__image")
+                gallery_imgs = gallery_container.find_all("img")
+
+                if not gallery_img_containers or not gallery_imgs:
+                    print(f"No gallery imgs found for {activity_name}")
+                    return
+
                 gallery_img_links = [img["src"] for img in gallery_imgs]
-                gallery_img_links += [container["data-thumb"] for container in gallery_img_containers]
+                gallery_thumb_links = [container["data-thumb"] for container in gallery_img_containers]
 
                 gallery_img_folder = f"{activity_path}/assets"
                 if not os.path.exists(gallery_img_folder):
                     os.makedirs(gallery_img_folder)
 
-                for link in gallery_img_links:
-                    img_name = link.split("/")[-1]
-                    path_to_img = f"{gallery_img_folder}/{img_name}"
-                    print(f"Fetching: {img_name} ...")
-                    request.urlretrieve(link, path_to_img)
-                    time_wait = random.random() * 60
-                    print(f"Sleeping for {time_wait}s...")
-                    time.sleep(time_wait)
+                main_img_link = gallery_img_links[0]
+                main_thumb_link = gallery_thumb_links[0]
+                request.urlretrieve(main_img_link, f"{gallery_img_folder}/main.{main_img_link.split(".")[-1]}")
+                request.urlretrieve(main_thumb_link, f"{gallery_img_folder}/main_thumb.{main_thumb_link.split(".")[-1]}")
+
+                fetch_img_from_links(gallery_img_links[1:], gallery_img_folder, time_between_downloads)
+                fetch_img_from_links(gallery_thumb_links[1:], gallery_img_folder, time_between_downloads)
+
+def fetch_img_from_links(link_list, gallery_img_folder, time_between_downloads=60):
+    for link in link_list:
+        img_name = link.split("/")[-1]
+        path_to_img = f"{gallery_img_folder}/{img_name}"
+
+        print(f"Fetching: {img_name} ...")
+        request.urlretrieve(link, path_to_img)
+        time_wait = random.random() * time_between_downloads
+        print(f"Sleeping for {time_wait}s...")
+        time.sleep(time_wait)
 
 
 def generate_activity_json():
@@ -200,6 +216,9 @@ def parse_activity_gallery_links(activity_soup, activity_path) -> List[str]:
 
 if __name__ == '__main__':
     # These functions fetch data from the website
+    # All of them have a "time_between_downloads" parameter. 
+    # After each download the scrapper will sleep from 0 to time_between_downloads seconds
+    # By default "time_between_downloads" is 60 seconds
 
     # fetch_experiences()
     # fetch_activities()
@@ -209,5 +228,4 @@ if __name__ == '__main__':
 
 
     # This generates json from all the downloaded html
-
     generate_activity_json()
