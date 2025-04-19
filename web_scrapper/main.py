@@ -53,12 +53,16 @@ def fetch_thumbnails(time_between_downloads=60):
             thumbnail = activity.find("img")
             thumbnail_src = thumbnail.attrs.get("src")
             
-            print(f"Saving: {activity_name}...")
             storage_path = f"{WEB_DATA_FOLDER}/{activity_name}"
             if not os.path.exists(storage_path):
                 os.makedirs(storage_path)
-            request.urlretrieve(thumbnail_src, f"{storage_path}/thumbnail.png")
 
+            try:
+                print(f"Saving: {activity_name}...")
+                request.urlretrieve(thumbnail_src, f"{storage_path}/thumbnail.png")
+            except:
+                print(f"ERROR: Failed to retrieve thumbnail for {activity_name}")
+                
             time_wait = random.random() * time_between_downloads
             print(f"Sleeping for {time_wait}s...")
             time.sleep(time_wait)
@@ -87,10 +91,16 @@ def fetch_activity_gallery_images(time_between_downloads=60):
                 if not os.path.exists(gallery_img_folder):
                     os.makedirs(gallery_img_folder)
 
-                main_img_link = gallery_img_links[0]
-                main_thumb_link = gallery_thumb_links[0]
-                request.urlretrieve(main_img_link, f"{gallery_img_folder}/main.{main_img_link.split(".")[-1]}")
-                request.urlretrieve(main_thumb_link, f"{gallery_img_folder}/main_thumb.{main_thumb_link.split(".")[-1]}")
+                try:
+                    main_img_link = gallery_img_links[0]
+                    request.urlretrieve(main_img_link, f"{gallery_img_folder}/main.{main_img_link.split(".")[-1]}")
+                except:
+                    print(f"ERROR: Failed to retrieve main img for {activity_name}")
+                try:
+                    main_thumb_link = gallery_thumb_links[0]
+                    request.urlretrieve(main_thumb_link, f"{gallery_img_folder}/main_thumb.{main_thumb_link.split(".")[-1]}")
+                except:
+                    print(f"ERROR: Failed to retrieve main img thumbnail for {activity_name}")
 
                 fetch_img_from_links(gallery_img_links[1:], gallery_img_folder, time_between_downloads)
                 fetch_img_from_links(gallery_thumb_links[1:], gallery_img_folder, time_between_downloads)
@@ -100,8 +110,12 @@ def fetch_img_from_links(link_list, gallery_img_folder, time_between_downloads=6
         img_name = link.split("/")[-1]
         path_to_img = f"{gallery_img_folder}/{img_name}"
 
-        print(f"Fetching: {img_name} ...")
-        request.urlretrieve(link, path_to_img)
+        try:
+            print(f"Fetching: {img_name} ...")
+            request.urlretrieve(link, path_to_img)
+        except:
+            print(f"ERROR: Failed to retrieve {img_name} for {activity_name}")
+            
         time_wait = random.random() * time_between_downloads
         print(f"Sleeping for {time_wait}s...")
         time.sleep(time_wait)
@@ -224,7 +238,6 @@ if __name__ == '__main__':
     # fetch_activities()
     # fetch_thumbnails()
     # fetch_activity_gallery_images()
-
 
 
     # This generates json from all the downloaded html
