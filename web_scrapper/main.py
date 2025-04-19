@@ -9,7 +9,7 @@ import requests
 from bs4 import BeautifulSoup, Tag, NavigableString
 
 RAW_DATA_FOLDER = "raw_data"
-DATA_FOLDER = "data"
+DATA_FOLDER = "../resources/data/"
 LOCALBIRD_URL = "https://localbirdinternational.com"
 EXPERIENCES_URL = f"{LOCALBIRD_URL}/experiences/"
 
