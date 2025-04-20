@@ -135,9 +135,6 @@ def generate_activity_json():
             activity_soup = BeautifulSoup(activity_file, "html.parser")
             activities_dict[activity_name]["description_fields"] = parse_activity_data(activity_soup)
             activities_dict[activity_name]["tags"] = parse_activity_tags(activity_soup)
-            activities_dict[activity_name]["gallery"] = parse_activity_gallery_links(
-                activity_soup, f"{ASSETS_FOLDER.replace('..', '.')}/{activity_name}/gallery"
-            )
     with open(f"{DATA_FOLDER}/activities.json", "w+", encoding="utf-8") as activities_json:
         json.dump(activities_dict, activities_json, indent=4)
 
@@ -154,11 +151,11 @@ def parse_activity_data(activity_soup):
     if description_header:
         for parent in description_header.parents:
             if "elementor-widget-container" in parent.attrs.get("class", []):
-                return parse_activity_fields(parent)
-    return parse_activity_fields(description_container)
+                return parse_activity_description(parent)
+    return parse_activity_description(description_container)
 
 
-def parse_activity_fields(raw_activity_data) -> dict:
+def parse_activity_description(raw_activity_data) -> dict:
     activity_fields = dict()
 
     section_titles = raw_activity_data.find_all("h3")
@@ -220,24 +217,6 @@ def parse_activity_tags(activity_soup) -> List[str]:
     return [link.text for link in tag_container.find_all("a")]
 
 
-def parse_activity_gallery_links(activity_soup, gallery_path) -> List[str]:
-    gallery_container = activity_soup.find("div", class_="woocommerce-product-gallery")
-    gallery_img_containers = activity_soup.find_all("div", class_="woocommerce-product-gallery__image")
-    gallery_imgs = gallery_container.find_all("img")
-
-    gallery_thumb_links = [container["data-thumb"] for container in gallery_img_containers]
-    gallery_img_links = [img["src"] for img in gallery_imgs]
-    gallery_images = [
-        f"{gallery_path}/main_thumb.{gallery_thumb_links[0].split('.')[-1]}"
-        f"{gallery_path}/main.{gallery_img_links[0].split('.')[-1]}"
-    ]
-    for link in gallery_img_links[1:] + gallery_thumb_links[1:]:
-        img_name = link.split("/")[-1]
-        path_to_img = f"{gallery_path}/{img_name}"
-        gallery_images.append(path_to_img)
-    return gallery_images
-
-
 if __name__ == '__main__':
     # These functions fetch data from the website
     # All of them have a "time_between_downloads" parameter.
@@ -246,8 +225,8 @@ if __name__ == '__main__':
 
     # fetch_experiences()
     # fetch_activities()
-    # fetch_thumbnails()
-    # fetch_activity_gallery_images()
+    # fetch_thumbnails(time_between_downloads=120)
+    # fetch_activity_gallery_images(time_between_downloads=120)
 
 
     # This generates json from all the downloaded html

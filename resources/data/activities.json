@@ -12,19 +12,6 @@
             "Adventure",
             "Mountain",
             "Sport"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Bungee jumping experience/gallery/main_thumb.jpg./resources/assets/activities/Bungee jumping experience/gallery/main.jpg",
-            "./resources/assets/activities/Bungee jumping experience/gallery/puenting-calpe-mascarat-01-1-600x343.jpeg",
-            "./resources/assets/activities/Bungee jumping experience/gallery/21031211342-1-e1647382368334.jpeg",
-            "./resources/assets/activities/Bungee jumping experience/gallery/813265865436720-1-600x400.jpeg",
-            "./resources/assets/activities/Bungee jumping experience/gallery/puenting-en-gran-canaria-1-600x600.jpeg",
-            "./resources/assets/activities/Bungee jumping experience/gallery/puentingGranCanaria-1.jpeg",
-            "./resources/assets/activities/Bungee jumping experience/gallery/puenting-calpe-mascarat-01-1-100x100.jpeg",
-            "./resources/assets/activities/Bungee jumping experience/gallery/21031211342-1-e1647382368334-300x300.jpeg",
-            "./resources/assets/activities/Bungee jumping experience/gallery/813265865436720-1-100x100.jpeg",
-            "./resources/assets/activities/Bungee jumping experience/gallery/puenting-en-gran-canaria-1-100x100.jpeg",
-            "./resources/assets/activities/Bungee jumping experience/gallery/puentingGranCanaria-1-100x100.jpeg"
         ]
     },
     "Climbing experience": {
@@ -41,21 +28,6 @@
             "Adventure",
             "Mountain",
             "Sport"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Climbing experience/gallery/main_thumb.jpg./resources/assets/activities/Climbing experience/gallery/main.jpg",
-            "./resources/assets/activities/Climbing experience/gallery/WhatsApp-Image-2022-11-24-at-11.14.31-3-600x338.jpeg",
-            "./resources/assets/activities/Climbing experience/gallery/WhatsApp-Image-2022-11-24-at-11.14.31-1-600x338.jpeg",
-            "./resources/assets/activities/Climbing experience/gallery/WhatsApp-Image-2022-11-24-at-11.14.32-3-600x338.jpeg",
-            "./resources/assets/activities/Climbing experience/gallery/WhatsApp-Image-2022-11-24-at-11.14.31-2-600x338.jpeg",
-            "./resources/assets/activities/Climbing experience/gallery/Climbing-Experiences-600x478.png",
-            "./resources/assets/activities/Climbing experience/gallery/Climbing-Experiences-1-600x381.png",
-            "./resources/assets/activities/Climbing experience/gallery/WhatsApp-Image-2022-11-24-at-11.14.31-3-100x100.jpeg",
-            "./resources/assets/activities/Climbing experience/gallery/WhatsApp-Image-2022-11-24-at-11.14.31-1-100x100.jpeg",
-            "./resources/assets/activities/Climbing experience/gallery/WhatsApp-Image-2022-11-24-at-11.14.32-3-100x100.jpeg",
-            "./resources/assets/activities/Climbing experience/gallery/WhatsApp-Image-2022-11-24-at-11.14.31-2-100x100.jpeg",
-            "./resources/assets/activities/Climbing experience/gallery/Climbing-Experiences-100x100.png",
-            "./resources/assets/activities/Climbing experience/gallery/Climbing-Experiences-1-100x100.png"
         ]
     },
     "Coasteering experience": {
@@ -73,21 +45,6 @@
             "Adventure",
             "Nature",
             "Sport"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Coasteering experience/gallery/main_thumb.jpg./resources/assets/activities/Coasteering experience/gallery/main.jpg",
-            "./resources/assets/activities/Coasteering experience/gallery/Coasteering_cave-600x263.jpg",
-            "./resources/assets/activities/Coasteering experience/gallery/Coasteering_climb-600x263.jpg",
-            "./resources/assets/activities/Coasteering experience/gallery/Coasteering_experience-600x263.jpg",
-            "./resources/assets/activities/Coasteering experience/gallery/Coasteering_fun-600x263.jpg",
-            "./resources/assets/activities/Coasteering experience/gallery/Coasteering_jump-600x263.jpg",
-            "./resources/assets/activities/Coasteering experience/gallery/Coasteering_adventure-600x263.jpg",
-            "./resources/assets/activities/Coasteering experience/gallery/Coasteering_cave-100x100.jpg",
-            "./resources/assets/activities/Coasteering experience/gallery/Coasteering_climb-100x100.jpg",
-            "./resources/assets/activities/Coasteering experience/gallery/Coasteering_experience-100x100.jpg",
-            "./resources/assets/activities/Coasteering experience/gallery/Coasteering_fun-100x100.jpg",
-            "./resources/assets/activities/Coasteering experience/gallery/Coasteering_jump-100x100.jpg",
-            "./resources/assets/activities/Coasteering experience/gallery/Coasteering_adventure-100x100.jpg"
         ]
     },
     "Dance Classes": {
@@ -102,17 +59,6 @@
         "tags": [
             "City",
             "Community"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Dance Classes/gallery/main_thumb.jpg./resources/assets/activities/Dance Classes/gallery/main.jpg",
-            "./resources/assets/activities/Dance Classes/gallery/20181003-Edoardo-Giani-Erasmus-Salsa-Malecon-De-La-Habana-0320-600x400.jpg",
-            "./resources/assets/activities/Dance Classes/gallery/20181003-Edoardo-Giani-Erasmus-Salsa-Malecon-De-La-Habana-0132-600x400.jpg",
-            "./resources/assets/activities/Dance Classes/gallery/DU-MONDE-AU-TOURNANT-DSC_1537-600x401.jpg",
-            "./resources/assets/activities/Dance Classes/gallery/DU-MONDE-AU-TOURNANT-DSC_1948.jpg",
-            "./resources/assets/activities/Dance Classes/gallery/20181003-Edoardo-Giani-Erasmus-Salsa-Malecon-De-La-Habana-0320-100x100.jpg",
-            "./resources/assets/activities/Dance Classes/gallery/20181003-Edoardo-Giani-Erasmus-Salsa-Malecon-De-La-Habana-0132-100x100.jpg",
-            "./resources/assets/activities/Dance Classes/gallery/DU-MONDE-AU-TOURNANT-DSC_1537-100x100.jpg",
-            "./resources/assets/activities/Dance Classes/gallery/DU-MONDE-AU-TOURNANT-DSC_1948-100x100.jpg"
         ]
     },
     "Food Workshop experience": {
@@ -127,27 +73,6 @@
             "Adventure",
             "Experience",
             "Food"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Food Workshop experience/gallery/main_thumb.jpg./resources/assets/activities/Food Workshop experience/gallery/main.jpg",
-            "./resources/assets/activities/Food Workshop experience/gallery/food-workshop-1-600x733.jpg",
-            "./resources/assets/activities/Food Workshop experience/gallery/food-workshop-2-600x436.jpg",
-            "./resources/assets/activities/Food Workshop experience/gallery/food-workshop-3-600x537.jpg",
-            "./resources/assets/activities/Food Workshop experience/gallery/food-workshop-4-600x435.jpg",
-            "./resources/assets/activities/Food Workshop experience/gallery/food-workshop-5-600x434.jpg",
-            "./resources/assets/activities/Food Workshop experience/gallery/ecoisleta-food-workshop-600x444.jpg",
-            "./resources/assets/activities/Food Workshop experience/gallery/Canarian-Food-workshop-in-EcoIsleta-Coliving-1024x768-1-600x450.jpg",
-            "./resources/assets/activities/Food Workshop experience/gallery/FOOD-ROOM3-10-600x900.jpg",
-            "./resources/assets/activities/Food Workshop experience/gallery/tapas-online-cooking-class-barcelona-4748.jpg",
-            "./resources/assets/activities/Food Workshop experience/gallery/food-workshop-1-100x100.jpg",
-            "./resources/assets/activities/Food Workshop experience/gallery/food-workshop-2-100x100.jpg",
-            "./resources/assets/activities/Food Workshop experience/gallery/food-workshop-3-100x100.jpg",
-            "./resources/assets/activities/Food Workshop experience/gallery/food-workshop-4-100x100.jpg",
-            "./resources/assets/activities/Food Workshop experience/gallery/food-workshop-5-100x100.jpg",
-            "./resources/assets/activities/Food Workshop experience/gallery/ecoisleta-food-workshop-100x100.jpg",
-            "./resources/assets/activities/Food Workshop experience/gallery/Canarian-Food-workshop-in-EcoIsleta-Coliving-1024x768-1-100x100.jpg",
-            "./resources/assets/activities/Food Workshop experience/gallery/FOOD-ROOM3-10-100x100.jpg",
-            "./resources/assets/activities/Food Workshop experience/gallery/tapas-online-cooking-class-barcelona-4748-100x100.jpg"
         ]
     },
     "Kayak adventure in nature": {
@@ -166,23 +91,6 @@
             "Adventure",
             "City",
             "Sport"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Kayak adventure in nature/gallery/main_thumb.jpg./resources/assets/activities/Kayak adventure in nature/gallery/main.jpg",
-            "./resources/assets/activities/Kayak adventure in nature/gallery/kayak-600x263.jpg",
-            "./resources/assets/activities/Kayak adventure in nature/gallery/kayak-2-600x263.jpg",
-            "./resources/assets/activities/Kayak adventure in nature/gallery/kayak-1-600x263.jpg",
-            "./resources/assets/activities/Kayak adventure in nature/gallery/kayak-4-600x263.jpg",
-            "./resources/assets/activities/Kayak adventure in nature/gallery/kayak-5-600x263.jpg",
-            "./resources/assets/activities/Kayak adventure in nature/gallery/kayak-3-600x263.jpg",
-            "./resources/assets/activities/Kayak adventure in nature/gallery/IMG_20210513_115234_055-600x600.jpg",
-            "./resources/assets/activities/Kayak adventure in nature/gallery/kayak-100x100.jpg",
-            "./resources/assets/activities/Kayak adventure in nature/gallery/kayak-2-100x100.jpg",
-            "./resources/assets/activities/Kayak adventure in nature/gallery/kayak-1-100x100.jpg",
-            "./resources/assets/activities/Kayak adventure in nature/gallery/kayak-4-100x100.jpg",
-            "./resources/assets/activities/Kayak adventure in nature/gallery/kayak-5-100x100.jpg",
-            "./resources/assets/activities/Kayak adventure in nature/gallery/kayak-3-100x100.jpg",
-            "./resources/assets/activities/Kayak adventure in nature/gallery/IMG_20210513_115234_055-100x100.jpg"
         ]
     },
     "Local markets tour by bike": {
@@ -201,29 +109,6 @@
             "Experience",
             "Localbird Trip",
             "Sport"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Local markets tour by bike/gallery/main_thumb.jpg./resources/assets/activities/Local markets tour by bike/gallery/main.jpg",
-            "./resources/assets/activities/Local markets tour by bike/gallery/BIKE4-600x531.jpg",
-            "./resources/assets/activities/Local markets tour by bike/gallery/BIKE3-600x525.jpg",
-            "./resources/assets/activities/Local markets tour by bike/gallery/BIKE1-600x533.jpg",
-            "./resources/assets/activities/Local markets tour by bike/gallery/ed8ec6df-0a75-4b5e-8358-5d3dffb8e1fc-600x613.jpg",
-            "./resources/assets/activities/Local markets tour by bike/gallery/WhatsApp-Image-2025-03-06-at-12.03.38-600x654.jpeg",
-            "./resources/assets/activities/Local markets tour by bike/gallery/WhatsApp-Image-2025-03-06-at-12.03.38-3-600x627.jpeg",
-            "./resources/assets/activities/Local markets tour by bike/gallery/WhatsApp-Image-2025-03-06-at-12.03.38-2-600x606.jpeg",
-            "./resources/assets/activities/Local markets tour by bike/gallery/WhatsApp-Image-2025-03-06-at-12.03.38-1-600x613.jpeg",
-            "./resources/assets/activities/Local markets tour by bike/gallery/c806951a-c01f-4c4b-bb68-e5f1d606b78e-2-600x800.jpg",
-            "./resources/assets/activities/Local markets tour by bike/gallery/7deee0d9-a3b7-43ed-8aac-a26be5443725-600x800.jpg",
-            "./resources/assets/activities/Local markets tour by bike/gallery/BIKE4-100x100.jpg",
-            "./resources/assets/activities/Local markets tour by bike/gallery/BIKE3-100x100.jpg",
-            "./resources/assets/activities/Local markets tour by bike/gallery/BIKE1-100x100.jpg",
-            "./resources/assets/activities/Local markets tour by bike/gallery/ed8ec6df-0a75-4b5e-8358-5d3dffb8e1fc-100x100.jpg",
-            "./resources/assets/activities/Local markets tour by bike/gallery/WhatsApp-Image-2025-03-06-at-12.03.38-100x100.jpeg",
-            "./resources/assets/activities/Local markets tour by bike/gallery/WhatsApp-Image-2025-03-06-at-12.03.38-3-100x100.jpeg",
-            "./resources/assets/activities/Local markets tour by bike/gallery/WhatsApp-Image-2025-03-06-at-12.03.38-2-100x100.jpeg",
-            "./resources/assets/activities/Local markets tour by bike/gallery/WhatsApp-Image-2025-03-06-at-12.03.38-1-100x100.jpeg",
-            "./resources/assets/activities/Local markets tour by bike/gallery/c806951a-c01f-4c4b-bb68-e5f1d606b78e-2-100x100.jpg",
-            "./resources/assets/activities/Local markets tour by bike/gallery/7deee0d9-a3b7-43ed-8aac-a26be5443725-100x100.jpg"
         ]
     },
     "Local tour by bike - Las Palmas": {
@@ -240,19 +125,6 @@
             "Experience",
             "Localbird Trip",
             "Sport"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Local tour by bike - Las Palmas/gallery/main_thumb.jpg./resources/assets/activities/Local tour by bike - Las Palmas/gallery/main.jpg",
-            "./resources/assets/activities/Local tour by bike - Las Palmas/gallery/BIKE5-600x581.jpg",
-            "./resources/assets/activities/Local tour by bike - Las Palmas/gallery/BIKE4-600x531.jpg",
-            "./resources/assets/activities/Local tour by bike - Las Palmas/gallery/BIKE3-600x525.jpg",
-            "./resources/assets/activities/Local tour by bike - Las Palmas/gallery/BIKE2-600x590.jpg",
-            "./resources/assets/activities/Local tour by bike - Las Palmas/gallery/BIKE1-600x533.jpg",
-            "./resources/assets/activities/Local tour by bike - Las Palmas/gallery/BIKE5-100x100.jpg",
-            "./resources/assets/activities/Local tour by bike - Las Palmas/gallery/BIKE4-100x100.jpg",
-            "./resources/assets/activities/Local tour by bike - Las Palmas/gallery/BIKE3-100x100.jpg",
-            "./resources/assets/activities/Local tour by bike - Las Palmas/gallery/BIKE2-100x100.jpg",
-            "./resources/assets/activities/Local tour by bike - Las Palmas/gallery/BIKE1-100x100.jpg"
         ]
     },
     "Local Trip with Amanda - mountain hidden paths": {
@@ -269,23 +141,6 @@
             "Beach",
             "Community",
             "Localbird Trip"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Local Trip with Amanda - mountain hidden paths/gallery/main_thumb.png./resources/assets/activities/Local Trip with Amanda - mountain hidden paths/gallery/main.png",
-            "./resources/assets/activities/Local Trip with Amanda - mountain hidden paths/gallery/Screenshot-2022-07-19-at-18.05.06-1.png",
-            "./resources/assets/activities/Local Trip with Amanda - mountain hidden paths/gallery/web-1660304674949-copy.jpg",
-            "./resources/assets/activities/Local Trip with Amanda - mountain hidden paths/gallery/Screenshot-2022-07-19-at-18.04.10-1-600x750.png",
-            "./resources/assets/activities/Local Trip with Amanda - mountain hidden paths/gallery/Screenshot-2022-07-19-at-18.04.21-1-600x755.png",
-            "./resources/assets/activities/Local Trip with Amanda - mountain hidden paths/gallery/1660304674986-600x1067.jpg",
-            "./resources/assets/activities/Local Trip with Amanda - mountain hidden paths/gallery/web-Screenshot-2022-08-12-at-12.56.07-copy-600x576.png",
-            "./resources/assets/activities/Local Trip with Amanda - mountain hidden paths/gallery/Local-Trip-with-Nestor-600x716.png",
-            "./resources/assets/activities/Local Trip with Amanda - mountain hidden paths/gallery/Screenshot-2022-07-19-at-18.05.06-1-100x100.png",
-            "./resources/assets/activities/Local Trip with Amanda - mountain hidden paths/gallery/web-1660304674949-copy-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Amanda - mountain hidden paths/gallery/Screenshot-2022-07-19-at-18.04.10-1-100x100.png",
-            "./resources/assets/activities/Local Trip with Amanda - mountain hidden paths/gallery/Screenshot-2022-07-19-at-18.04.21-1-100x100.png",
-            "./resources/assets/activities/Local Trip with Amanda - mountain hidden paths/gallery/1660304674986-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Amanda - mountain hidden paths/gallery/web-Screenshot-2022-08-12-at-12.56.07-copy-100x100.png",
-            "./resources/assets/activities/Local Trip with Amanda - mountain hidden paths/gallery/Local-Trip-with-Nestor-100x100.png"
         ]
     },
     "Local trip with Daniel - coffee plantation": {
@@ -301,15 +156,6 @@
             "Beach",
             "Community",
             "Localbird Trip"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Local trip with Daniel - coffee plantation/gallery/main_thumb.jpg./resources/assets/activities/Local trip with Daniel - coffee plantation/gallery/main.jpg",
-            "./resources/assets/activities/Local trip with Daniel - coffee plantation/gallery/Captura-de-pantalla-2021-09-15-a-las-15.03.20-600x1075.png",
-            "./resources/assets/activities/Local trip with Daniel - coffee plantation/gallery/Erasmus-SICUE-Local-Coast-trip.png",
-            "./resources/assets/activities/Local trip with Daniel - coffee plantation/gallery/Local-Coast-trip-600x763.png",
-            "./resources/assets/activities/Local trip with Daniel - coffee plantation/gallery/Captura-de-pantalla-2021-09-15-a-las-15.03.20-100x100.png",
-            "./resources/assets/activities/Local trip with Daniel - coffee plantation/gallery/Erasmus-SICUE-Local-Coast-trip-100x100.png",
-            "./resources/assets/activities/Local trip with Daniel - coffee plantation/gallery/Local-Coast-trip-100x100.png"
         ]
     },
     "Local Trip with Daniel - north coast": {
@@ -326,27 +172,6 @@
             "Beach",
             "Community",
             "Localbird Trip"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Local Trip with Daniel - north coast/gallery/main_thumb.png./resources/assets/activities/Local Trip with Daniel - north coast/gallery/main.png",
-            "./resources/assets/activities/Local Trip with Daniel - north coast/gallery/DSC05325-600x450.jpg",
-            "./resources/assets/activities/Local Trip with Daniel - north coast/gallery/IMG-20181005-WA0008-600x413.jpg",
-            "./resources/assets/activities/Local Trip with Daniel - north coast/gallery/1632325587115-1.jpg",
-            "./resources/assets/activities/Local Trip with Daniel - north coast/gallery/2019-10-13-17.53.31.jpg",
-            "./resources/assets/activities/Local Trip with Daniel - north coast/gallery/1646606188410-600x450.jpg",
-            "./resources/assets/activities/Local Trip with Daniel - north coast/gallery/1662931805068.jpg",
-            "./resources/assets/activities/Local Trip with Daniel - north coast/gallery/1662931805260.jpg",
-            "./resources/assets/activities/Local Trip with Daniel - north coast/gallery/Faro-600x338.jpg",
-            "./resources/assets/activities/Local Trip with Daniel - north coast/gallery/edo-sunset-vert.jpg",
-            "./resources/assets/activities/Local Trip with Daniel - north coast/gallery/DSC05325-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Daniel - north coast/gallery/IMG-20181005-WA0008-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Daniel - north coast/gallery/1632325587115-1-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Daniel - north coast/gallery/2019-10-13-17.53.31-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Daniel - north coast/gallery/1646606188410-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Daniel - north coast/gallery/1662931805068-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Daniel - north coast/gallery/1662931805260-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Daniel - north coast/gallery/Faro-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Daniel - north coast/gallery/edo-sunset-vert-100x100.jpg"
         ]
     },
     "Local Trip with Eduardo - abandoned and local places": {
@@ -363,19 +188,6 @@
             "Beach",
             "Community",
             "Localbird Trip"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Local Trip with Eduardo - abandoned and local places/gallery/main_thumb.jpg./resources/assets/activities/Local Trip with Eduardo - abandoned and local places/gallery/main.jpg",
-            "./resources/assets/activities/Local Trip with Eduardo - abandoned and local places/gallery/WhatsApp-Image-2022-07-04-at-12.09.47-AM.jpeg",
-            "./resources/assets/activities/Local Trip with Eduardo - abandoned and local places/gallery/WhatsApp-Image-2022-07-04-at-12.26.16-AM.jpeg",
-            "./resources/assets/activities/Local Trip with Eduardo - abandoned and local places/gallery/Captura-de-pantalla-2021-10-26-a-las-19.27.10.png",
-            "./resources/assets/activities/Local Trip with Eduardo - abandoned and local places/gallery/unnamed-sb.jpeg",
-            "./resources/assets/activities/Local Trip with Eduardo - abandoned and local places/gallery/Local-Trip-with-Eduardo-600x762.png",
-            "./resources/assets/activities/Local Trip with Eduardo - abandoned and local places/gallery/WhatsApp-Image-2022-07-04-at-12.09.47-AM-100x100.jpeg",
-            "./resources/assets/activities/Local Trip with Eduardo - abandoned and local places/gallery/WhatsApp-Image-2022-07-04-at-12.26.16-AM-100x100.jpeg",
-            "./resources/assets/activities/Local Trip with Eduardo - abandoned and local places/gallery/Captura-de-pantalla-2021-10-26-a-las-19.27.10-100x100.png",
-            "./resources/assets/activities/Local Trip with Eduardo - abandoned and local places/gallery/unnamed-sb-100x100.jpeg",
-            "./resources/assets/activities/Local Trip with Eduardo - abandoned and local places/gallery/Local-Trip-with-Eduardo-100x100.png"
         ]
     },
     "Local Trip with Nestor - local places in the south": {
@@ -392,31 +204,6 @@
             "Beach",
             "Community",
             "Localbird Trip"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/main_thumb.png./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/main.png",
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/IMG_20210404_203331_779-600x600.jpg",
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/Night-snorkeling-4.png",
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/kayak-2-600x263.jpg",
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/IMG_7101.jpeg",
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/IMG_3400-600x450.jpeg",
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/IMG_7155.jpeg",
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/IMG_20210404_203331_696-600x600.jpg",
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/IMG_20210404_203331_714-600x600.jpg",
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/1633349083303-copy.jpg",
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/Polonia-caves-600x400.jpg",
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/Salto-de-todas-600x400.jpg",
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/IMG_20210404_203331_779-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/Night-snorkeling-4-100x100.png",
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/kayak-2-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/IMG_7101-100x100.jpeg",
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/IMG_3400-100x100.jpeg",
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/IMG_7155-100x100.jpeg",
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/IMG_20210404_203331_696-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/IMG_20210404_203331_714-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/1633349083303-copy-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/Polonia-caves-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Nestor - local places in the south/gallery/Salto-de-todas-100x100.jpg"
         ]
     },
     "Local Trip with Sonia - Green Canyon": {
@@ -432,23 +219,6 @@
             "Adventure",
             "Mountain",
             "Sport"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Local Trip with Sonia - Green Canyon/gallery/main_thumb.jpg./resources/assets/activities/Local Trip with Sonia - Green Canyon/gallery/main.jpg",
-            "./resources/assets/activities/Local Trip with Sonia - Green Canyon/gallery/Azuaje-experience-600x338.jpg",
-            "./resources/assets/activities/Local Trip with Sonia - Green Canyon/gallery/barranco-de-azuaje-localbird-600x262.jpg",
-            "./resources/assets/activities/Local Trip with Sonia - Green Canyon/gallery/Barranco-Azuaje-local-trip-sonia-600x400.jpg",
-            "./resources/assets/activities/Local Trip with Sonia - Green Canyon/gallery/local-trip-sonia-green-canyon-600x338.jpg",
-            "./resources/assets/activities/Local Trip with Sonia - Green Canyon/gallery/abandoned-places-gran-canaria-600x450.jpg",
-            "./resources/assets/activities/Local Trip with Sonia - Green Canyon/gallery/local-trip-sonia-600x338.jpg",
-            "./resources/assets/activities/Local Trip with Sonia - Green Canyon/gallery/local-food-tasting-600x400.jpg",
-            "./resources/assets/activities/Local Trip with Sonia - Green Canyon/gallery/Azuaje-experience-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Sonia - Green Canyon/gallery/barranco-de-azuaje-localbird-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Sonia - Green Canyon/gallery/Barranco-Azuaje-local-trip-sonia-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Sonia - Green Canyon/gallery/local-trip-sonia-green-canyon-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Sonia - Green Canyon/gallery/abandoned-places-gran-canaria-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Sonia - Green Canyon/gallery/local-trip-sonia-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Sonia - Green Canyon/gallery/local-food-tasting-100x100.jpg"
         ]
     },
     "Local Trip with Sonia - North Coast": {
@@ -464,15 +234,6 @@
             "Adventure",
             "Mountain",
             "Sport"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Local Trip with Sonia - North Coast/gallery/main_thumb.jpg./resources/assets/activities/Local Trip with Sonia - North Coast/gallery/main.jpg",
-            "./resources/assets/activities/Local Trip with Sonia - North Coast/gallery/Costa-Norte-experience-600x399.jpg",
-            "./resources/assets/activities/Local Trip with Sonia - North Coast/gallery/Costa-Norte-600x450.jpg",
-            "./resources/assets/activities/Local Trip with Sonia - North Coast/gallery/Costa-Norte-adventure.jpeg",
-            "./resources/assets/activities/Local Trip with Sonia - North Coast/gallery/Costa-Norte-experience-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Sonia - North Coast/gallery/Costa-Norte-100x100.jpg",
-            "./resources/assets/activities/Local Trip with Sonia - North Coast/gallery/Costa-Norte-adventure-100x100.jpeg"
         ]
     },
     "Multiadventure experience": {
@@ -488,21 +249,6 @@
             "Adventure",
             "City",
             "Sport"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Multiadventure experience/gallery/main_thumb.jpg./resources/assets/activities/Multiadventure experience/gallery/main.jpg",
-            "./resources/assets/activities/Multiadventure experience/gallery/1634555639166.jpg",
-            "./resources/assets/activities/Multiadventure experience/gallery/1634498069916-600x809.jpg",
-            "./resources/assets/activities/Multiadventure experience/gallery/1634498069973.jpg",
-            "./resources/assets/activities/Multiadventure experience/gallery/1634498070055.jpg",
-            "./resources/assets/activities/Multiadventure experience/gallery/1634498070251.jpg",
-            "./resources/assets/activities/Multiadventure experience/gallery/1634498070132-600x338.jpg",
-            "./resources/assets/activities/Multiadventure experience/gallery/1634555639166-100x100.jpg",
-            "./resources/assets/activities/Multiadventure experience/gallery/1634498069916-100x100.jpg",
-            "./resources/assets/activities/Multiadventure experience/gallery/1634498069973-100x100.jpg",
-            "./resources/assets/activities/Multiadventure experience/gallery/1634498070055-100x100.jpg",
-            "./resources/assets/activities/Multiadventure experience/gallery/1634498070251-100x100.jpg",
-            "./resources/assets/activities/Multiadventure experience/gallery/1634498070132-100x100.jpg"
         ]
     },
     "Night snorkeling In Las Palmas": {
@@ -518,29 +264,6 @@
             "Adventure",
             "City",
             "Sport"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Night snorkeling In Las Palmas/gallery/main_thumb.png./resources/assets/activities/Night snorkeling In Las Palmas/gallery/main.png",
-            "./resources/assets/activities/Night snorkeling In Las Palmas/gallery/WhatsApp-Image-2021-04-18-at-00.12.29-3-600x450.jpeg",
-            "./resources/assets/activities/Night snorkeling In Las Palmas/gallery/WhatsApp-Image-2021-04-18-at-00.13.02-4-600x450.jpeg",
-            "./resources/assets/activities/Night snorkeling In Las Palmas/gallery/Night-snorkeling-In-Las-Palmas-600x286.png",
-            "./resources/assets/activities/Night snorkeling In Las Palmas/gallery/1653126781335-600x1067.jpg",
-            "./resources/assets/activities/Night snorkeling In Las Palmas/gallery/IMG-20210417-WA0047-600x450.jpg",
-            "./resources/assets/activities/Night snorkeling In Las Palmas/gallery/las-palmas-de-gran-canaria-ruta-guiada-de-snorkel-nocturno-de-2h-en-la-playa-de-las-canteras2.jpg",
-            "./resources/assets/activities/Night snorkeling In Las Palmas/gallery/PB031262-600x450.jpg",
-            "./resources/assets/activities/Night snorkeling In Las Palmas/gallery/rocroi-las-palmas-de-gran-canaria-ruta-guiada-de-snorkel-nocturno-de-2h-en-la-playa-de-las-canteras-1.jpg",
-            "./resources/assets/activities/Night snorkeling In Las Palmas/gallery/rocroi-las-palmas-de-gran-canaria-ruta-guiada-de-snorkel-nocturno-de-2h-en-la-playa-de-las-canteras-3-400x339-1.jpg",
-            "./resources/assets/activities/Night snorkeling In Las Palmas/gallery/WhatsApp-Image-2022-09-30-at-10.59.08-AM-2-600x800.jpeg",
-            "./resources/assets/activities/Night snorkeling In Las Palmas/gallery/WhatsApp-Image-2021-04-18-at-00.12.29-3-100x100.jpeg",
-            "./resources/assets/activities/Night snorkeling In Las Palmas/gallery/WhatsApp-Image-2021-04-18-at-00.13.02-4-100x100.jpeg",
-            "./resources/assets/activities/Night snorkeling In Las Palmas/gallery/Night-snorkeling-In-Las-Palmas-100x100.png",
-            "./resources/assets/activities/Night snorkeling In Las Palmas/gallery/1653126781335-100x100.jpg",
-            "./resources/assets/activities/Night snorkeling In Las Palmas/gallery/IMG-20210417-WA0047-100x100.jpg",
-            "./resources/assets/activities/Night snorkeling In Las Palmas/gallery/las-palmas-de-gran-canaria-ruta-guiada-de-snorkel-nocturno-de-2h-en-la-playa-de-las-canteras2-100x100.jpg",
-            "./resources/assets/activities/Night snorkeling In Las Palmas/gallery/PB031262-100x100.jpg",
-            "./resources/assets/activities/Night snorkeling In Las Palmas/gallery/rocroi-las-palmas-de-gran-canaria-ruta-guiada-de-snorkel-nocturno-de-2h-en-la-playa-de-las-canteras-1-100x100.jpg",
-            "./resources/assets/activities/Night snorkeling In Las Palmas/gallery/rocroi-las-palmas-de-gran-canaria-ruta-guiada-de-snorkel-nocturno-de-2h-en-la-playa-de-las-canteras-3-400x339-1-100x100.jpg",
-            "./resources/assets/activities/Night snorkeling In Las Palmas/gallery/WhatsApp-Image-2022-09-30-at-10.59.08-AM-2-100x100.jpeg"
         ]
     },
     "Paragliding experience": {
@@ -557,21 +280,6 @@
             "City",
             "Mountain",
             "Sport"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Paragliding experience/gallery/main_thumb.jpg./resources/assets/activities/Paragliding experience/gallery/main.jpg",
-            "./resources/assets/activities/Paragliding experience/gallery/B0878D88-AE1D-4023-B615-833E7603C6ED_92-1536x864-1-600x338.jpeg",
-            "./resources/assets/activities/Paragliding experience/gallery/Paragliding-experience-1-600x814.png",
-            "./resources/assets/activities/Paragliding experience/gallery/Paragliding-experience-2-600x761.png",
-            "./resources/assets/activities/Paragliding experience/gallery/WhatsApp-Image-2025-02-27-at-13.35.48-3-600x1013.jpeg",
-            "./resources/assets/activities/Paragliding experience/gallery/1645563754671-600x337.jpg",
-            "./resources/assets/activities/Paragliding experience/gallery/WhatsApp-Image-2025-02-27-at-13.36.08-2-600x901.jpeg",
-            "./resources/assets/activities/Paragliding experience/gallery/B0878D88-AE1D-4023-B615-833E7603C6ED_92-1536x864-1-100x100.jpeg",
-            "./resources/assets/activities/Paragliding experience/gallery/Paragliding-experience-1-100x100.png",
-            "./resources/assets/activities/Paragliding experience/gallery/Paragliding-experience-2-100x100.png",
-            "./resources/assets/activities/Paragliding experience/gallery/WhatsApp-Image-2025-02-27-at-13.35.48-3-100x100.jpeg",
-            "./resources/assets/activities/Paragliding experience/gallery/1645563754671-100x100.jpg",
-            "./resources/assets/activities/Paragliding experience/gallery/WhatsApp-Image-2025-02-27-at-13.36.08-2-100x100.jpeg"
         ]
     },
     "Scuba Diving experience": {
@@ -587,25 +295,6 @@
             "Adventure",
             "City",
             "Sport"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Scuba Diving experience/gallery/main_thumb.jpg./resources/assets/activities/Scuba Diving experience/gallery/main.jpg",
-            "./resources/assets/activities/Scuba Diving experience/gallery/WhatsApp-Image-2021-11-13-at-10.46.51-600x339.jpeg",
-            "./resources/assets/activities/Scuba Diving experience/gallery/WhatsApp-Image-2021-11-13-at-10.46.50-600x333.jpeg",
-            "./resources/assets/activities/Scuba Diving experience/gallery/WhatsApp-Image-2021-11-13-at-10.46.49-600x339.jpeg",
-            "./resources/assets/activities/Scuba Diving experience/gallery/WhatsApp-Image-2021-11-13-at-10.47.09-600x339.jpeg",
-            "./resources/assets/activities/Scuba Diving experience/gallery/WhatsApp-Image-2021-11-13-at-10.47.09-1-600x339.jpeg",
-            "./resources/assets/activities/Scuba Diving experience/gallery/3-600x450.jpeg",
-            "./resources/assets/activities/Scuba Diving experience/gallery/4-600x450.jpeg",
-            "./resources/assets/activities/Scuba Diving experience/gallery/5-600x450.jpeg",
-            "./resources/assets/activities/Scuba Diving experience/gallery/WhatsApp-Image-2021-11-13-at-10.46.51-100x100.jpeg",
-            "./resources/assets/activities/Scuba Diving experience/gallery/WhatsApp-Image-2021-11-13-at-10.46.50-100x100.jpeg",
-            "./resources/assets/activities/Scuba Diving experience/gallery/WhatsApp-Image-2021-11-13-at-10.46.49-100x100.jpeg",
-            "./resources/assets/activities/Scuba Diving experience/gallery/WhatsApp-Image-2021-11-13-at-10.47.09-100x100.jpeg",
-            "./resources/assets/activities/Scuba Diving experience/gallery/WhatsApp-Image-2021-11-13-at-10.47.09-1-100x100.jpeg",
-            "./resources/assets/activities/Scuba Diving experience/gallery/3-100x100.jpeg",
-            "./resources/assets/activities/Scuba Diving experience/gallery/4-100x100.jpeg",
-            "./resources/assets/activities/Scuba Diving experience/gallery/5-100x100.jpeg"
         ]
     },
     "Sunset Kayak Aperitif": {
@@ -621,27 +310,6 @@
             "Adventure",
             "City",
             "Sport"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Sunset Kayak Aperitif/gallery/main_thumb.jpg./resources/assets/activities/Sunset Kayak Aperitif/gallery/main.jpg",
-            "./resources/assets/activities/Sunset Kayak Aperitif/gallery/Captura-de-pantalla-2022-03-14-a-las-20.10.30-600x448.png",
-            "./resources/assets/activities/Sunset Kayak Aperitif/gallery/2021-05-28-21.06.06-600x1067.jpg",
-            "./resources/assets/activities/Sunset Kayak Aperitif/gallery/2021-05-28-20.27.35-600x1067.jpg",
-            "./resources/assets/activities/Sunset Kayak Aperitif/gallery/2021-05-28-20.46.06-600x1067.jpg",
-            "./resources/assets/activities/Sunset Kayak Aperitif/gallery/2021-05-28-20.31.33-600x1067.jpg",
-            "./resources/assets/activities/Sunset Kayak Aperitif/gallery/1632269756633-600x1067.jpg",
-            "./resources/assets/activities/Sunset Kayak Aperitif/gallery/1665174675317-600x450.jpg",
-            "./resources/assets/activities/Sunset Kayak Aperitif/gallery/1665174675324-600x450.jpg",
-            "./resources/assets/activities/Sunset Kayak Aperitif/gallery/1665174675331-600x450.jpg",
-            "./resources/assets/activities/Sunset Kayak Aperitif/gallery/Captura-de-pantalla-2022-03-14-a-las-20.10.30-100x100.png",
-            "./resources/assets/activities/Sunset Kayak Aperitif/gallery/2021-05-28-21.06.06-100x100.jpg",
-            "./resources/assets/activities/Sunset Kayak Aperitif/gallery/2021-05-28-20.27.35-100x100.jpg",
-            "./resources/assets/activities/Sunset Kayak Aperitif/gallery/2021-05-28-20.46.06-100x100.jpg",
-            "./resources/assets/activities/Sunset Kayak Aperitif/gallery/2021-05-28-20.31.33-100x100.jpg",
-            "./resources/assets/activities/Sunset Kayak Aperitif/gallery/1632269756633-100x100.jpg",
-            "./resources/assets/activities/Sunset Kayak Aperitif/gallery/1665174675317-100x100.jpg",
-            "./resources/assets/activities/Sunset Kayak Aperitif/gallery/1665174675324-100x100.jpg",
-            "./resources/assets/activities/Sunset Kayak Aperitif/gallery/1665174675331-100x100.jpg"
         ]
     },
     "Sunset Kayak Aperitif Love": {
@@ -657,15 +325,6 @@
             "Adventure",
             "City",
             "Sport"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Sunset Kayak Aperitif Love/gallery/main_thumb.jpg./resources/assets/activities/Sunset Kayak Aperitif Love/gallery/main.jpg",
-            "./resources/assets/activities/Sunset Kayak Aperitif Love/gallery/Captura-de-pantalla-2022-03-14-a-las-20.10.30-600x448.png",
-            "./resources/assets/activities/Sunset Kayak Aperitif Love/gallery/2021-05-28-20.27.35-600x1067.jpg",
-            "./resources/assets/activities/Sunset Kayak Aperitif Love/gallery/2021-05-28-20.31.33-600x1067.jpg",
-            "./resources/assets/activities/Sunset Kayak Aperitif Love/gallery/Captura-de-pantalla-2022-03-14-a-las-20.10.30-100x100.png",
-            "./resources/assets/activities/Sunset Kayak Aperitif Love/gallery/2021-05-28-20.27.35-100x100.jpg",
-            "./resources/assets/activities/Sunset Kayak Aperitif Love/gallery/2021-05-28-20.31.33-100x100.jpg"
         ]
     },
     "Surfing Classes Learn How to Surf \u2013 2hours": {
@@ -679,23 +338,6 @@
             "Adventure",
             "City",
             "Sport"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Surfing Classes Learn How to Surf \u2013 2hours/gallery/main_thumb.jpg./resources/assets/activities/Surfing Classes Learn How to Surf \u2013 2hours/gallery/main.jpg",
-            "./resources/assets/activities/Surfing Classes Learn How to Surf \u2013 2hours/gallery/WhatsApp-Image-2021-09-14-at-23.52.24-600x1067.jpeg",
-            "./resources/assets/activities/Surfing Classes Learn How to Surf \u2013 2hours/gallery/Captura-de-pantalla-2021-08-27-a-las-16.27.33-600x482.png",
-            "./resources/assets/activities/Surfing Classes Learn How to Surf \u2013 2hours/gallery/Captura-de-pantalla-2021-08-27-a-las-16.27.52-600x644.png",
-            "./resources/assets/activities/Surfing Classes Learn How to Surf \u2013 2hours/gallery/Captura-de-pantalla-2022-06-13-a-las-11.29.21-600x399.png",
-            "./resources/assets/activities/Surfing Classes Learn How to Surf \u2013 2hours/gallery/Captura-de-pantalla-2022-06-13-a-las-11.29.38-600x399.png",
-            "./resources/assets/activities/Surfing Classes Learn How to Surf \u2013 2hours/gallery/Captura-de-pantalla-2022-06-13-a-las-11.29.46-600x399.png",
-            "./resources/assets/activities/Surfing Classes Learn How to Surf \u2013 2hours/gallery/IMG_3918-600x800.jpg",
-            "./resources/assets/activities/Surfing Classes Learn How to Surf \u2013 2hours/gallery/WhatsApp-Image-2021-09-14-at-23.52.24-100x100.jpeg",
-            "./resources/assets/activities/Surfing Classes Learn How to Surf \u2013 2hours/gallery/Captura-de-pantalla-2021-08-27-a-las-16.27.33-100x100.png",
-            "./resources/assets/activities/Surfing Classes Learn How to Surf \u2013 2hours/gallery/Captura-de-pantalla-2021-08-27-a-las-16.27.52-100x100.png",
-            "./resources/assets/activities/Surfing Classes Learn How to Surf \u2013 2hours/gallery/Captura-de-pantalla-2022-06-13-a-las-11.29.21-100x100.png",
-            "./resources/assets/activities/Surfing Classes Learn How to Surf \u2013 2hours/gallery/Captura-de-pantalla-2022-06-13-a-las-11.29.38-100x100.png",
-            "./resources/assets/activities/Surfing Classes Learn How to Surf \u2013 2hours/gallery/Captura-de-pantalla-2022-06-13-a-las-11.29.46-100x100.png",
-            "./resources/assets/activities/Surfing Classes Learn How to Surf \u2013 2hours/gallery/IMG_3918-100x100.jpg"
         ]
     },
     "Surfing Classes Pack \u2013 from zero to hero": {
@@ -711,15 +353,6 @@
             "Adventure",
             "City",
             "Sport"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Surfing Classes Pack \u2013 from zero to hero/gallery/main_thumb.jpg./resources/assets/activities/Surfing Classes Pack \u2013 from zero to hero/gallery/main.jpg",
-            "./resources/assets/activities/Surfing Classes Pack \u2013 from zero to hero/gallery/WhatsApp-Image-2021-09-14-at-23.52.24-600x1067.jpeg",
-            "./resources/assets/activities/Surfing Classes Pack \u2013 from zero to hero/gallery/Captura-de-pantalla-2021-08-27-a-las-16.27.33-600x482.png",
-            "./resources/assets/activities/Surfing Classes Pack \u2013 from zero to hero/gallery/Captura-de-pantalla-2021-08-27-a-las-16.27.52-600x644.png",
-            "./resources/assets/activities/Surfing Classes Pack \u2013 from zero to hero/gallery/WhatsApp-Image-2021-09-14-at-23.52.24-100x100.jpeg",
-            "./resources/assets/activities/Surfing Classes Pack \u2013 from zero to hero/gallery/Captura-de-pantalla-2021-08-27-a-las-16.27.33-100x100.png",
-            "./resources/assets/activities/Surfing Classes Pack \u2013 from zero to hero/gallery/Captura-de-pantalla-2021-08-27-a-las-16.27.52-100x100.png"
         ]
     },
     "Via Ferrata": {
@@ -739,19 +372,6 @@
             "Adventure",
             "Mountain",
             "Sport"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Via Ferrata/gallery/main_thumb.jpg./resources/assets/activities/Via Ferrata/gallery/main.jpg",
-            "./resources/assets/activities/Via Ferrata/gallery/viaferrata2-600x263.jpg",
-            "./resources/assets/activities/Via Ferrata/gallery/viaferrata4-600x263.jpg",
-            "./resources/assets/activities/Via Ferrata/gallery/VIAFERRATA7-0.13.57-600x263.jpg",
-            "./resources/assets/activities/Via Ferrata/gallery/VIAFERRATA11-600x263.jpg",
-            "./resources/assets/activities/Via Ferrata/gallery/WhatsApp-Image-2022-11-24-at-11.14.32-3-600x338.jpeg",
-            "./resources/assets/activities/Via Ferrata/gallery/viaferrata2-100x100.jpg",
-            "./resources/assets/activities/Via Ferrata/gallery/viaferrata4-100x100.jpg",
-            "./resources/assets/activities/Via Ferrata/gallery/VIAFERRATA7-0.13.57-100x100.jpg",
-            "./resources/assets/activities/Via Ferrata/gallery/VIAFERRATA11-100x100.jpg",
-            "./resources/assets/activities/Via Ferrata/gallery/WhatsApp-Image-2022-11-24-at-11.14.32-3-100x100.jpeg"
         ]
     },
     "Water Canyoning experience": {
@@ -769,31 +389,6 @@
             "Adventure",
             "Mountain",
             "Sport"
-        ],
-        "gallery": [
-            "./resources/assets/activities/Water Canyoning experience/gallery/main_thumb.jpg./resources/assets/activities/Water Canyoning experience/gallery/main.jpg",
-            "./resources/assets/activities/Water Canyoning experience/gallery/Canyoning_local-600x263.jpg",
-            "./resources/assets/activities/Water Canyoning experience/gallery/Canyoning_waterfall-600x263.jpg",
-            "./resources/assets/activities/Water Canyoning experience/gallery/Canyoning_experience-600x263.jpg",
-            "./resources/assets/activities/Water Canyoning experience/gallery/Canyoning_activity-600x263.jpg",
-            "./resources/assets/activities/Water Canyoning experience/gallery/Canyoning_jump-600x263.jpg",
-            "./resources/assets/activities/Water Canyoning experience/gallery/canyoning_nature-600x263.jpg",
-            "./resources/assets/activities/Water Canyoning experience/gallery/BCO5-600x263.jpg",
-            "./resources/assets/activities/Water Canyoning experience/gallery/BCO10-600x263.jpg",
-            "./resources/assets/activities/Water Canyoning experience/gallery/IMG_20250108_121627_152-600x800.jpg",
-            "./resources/assets/activities/Water Canyoning experience/gallery/IMG_20250108_132127_245-600x800.jpg",
-            "./resources/assets/activities/Water Canyoning experience/gallery/tm_pre-20694-gopr48881674668599.jpg",
-            "./resources/assets/activities/Water Canyoning experience/gallery/Canyoning_local-100x100.jpg",
-            "./resources/assets/activities/Water Canyoning experience/gallery/Canyoning_waterfall-100x100.jpg",
-            "./resources/assets/activities/Water Canyoning experience/gallery/Canyoning_experience-100x100.jpg",
-            "./resources/assets/activities/Water Canyoning experience/gallery/Canyoning_activity-100x100.jpg",
-            "./resources/assets/activities/Water Canyoning experience/gallery/Canyoning_jump-100x100.jpg",
-            "./resources/assets/activities/Water Canyoning experience/gallery/canyoning_nature-100x100.jpg",
-            "./resources/assets/activities/Water Canyoning experience/gallery/BCO5-100x100.jpg",
-            "./resources/assets/activities/Water Canyoning experience/gallery/BCO10-100x100.jpg",
-            "./resources/assets/activities/Water Canyoning experience/gallery/IMG_20250108_121627_152-100x100.jpg",
-            "./resources/assets/activities/Water Canyoning experience/gallery/IMG_20250108_132127_245-100x100.jpg",
-            "./resources/assets/activities/Water Canyoning experience/gallery/tm_pre-20694-gopr48881674668599-100x100.jpg"
         ]
     }
 }
