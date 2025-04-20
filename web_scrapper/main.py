@@ -209,6 +209,12 @@ def clean_element(element) -> str:
         return element
     for br in element.find_all("br"):
         br.replace_with("\n")
+    if element.name == "ul":
+        items = element.find_all("li")
+        return "".join([f"{item.text}\n" for item in items])
+    for ul in element.find_all("ul"):
+        items = ul.find_all("li")
+        ul.replace_with("".join([f"{item.text}\n" for item in items]))
     return element.text
 
 
