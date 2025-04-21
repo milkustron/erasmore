@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ highlight?.title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="highlight">
+  <ion-img [src]="highlight.image"></ion-img>
+  <ion-card>
+    <ion-card-content>
+      <p>{{ highlight.description }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

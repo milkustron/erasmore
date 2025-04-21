@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  //background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2196f3;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  //background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.guide {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+.guide:last-child {
+  border-bottom: none;
+}
+
+h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #2196f3;
+  text-decoration: none;
+}
+
+ion-content.ion-padding {
+  // Apply padding as defined in the HTML
+}
+
+ion-card {
+  // Style for the individual cards
+  margin-bottom: 16px; // Add some space between cards
+}
+
+ion-img {
+  max-height: 200px;
+  overflow: hidden; // Ensure the image doesn't distort the card
+}
