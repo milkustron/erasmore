@@ -6,7 +6,11 @@ const routes: Routes = [
   {
     path: '',
     component: Tab3Page,
-  }
+  },
+  {
+    path: 'event/:id',
+    loadChildren: () => import('./event/event.module').then( m => m.EventPageModule)
+  },
 ];
 
 @NgModule({

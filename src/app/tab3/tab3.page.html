@@ -13,9 +13,9 @@
 
   <!-- Events list -->
   <ion-list>
-    <ion-item *ngFor="let event of events">
+    <ion-item *ngFor="let event of events; let i = index" (click)="goToChildPage(i)">
       <ion-avatar slot="start">
-        <img [src]="event.imageUrl" [alt]="event.name">
+        <img [src]="event.image" [alt]="event.name">
       </ion-avatar>
       
       <ion-label class="ion-text-wrap">

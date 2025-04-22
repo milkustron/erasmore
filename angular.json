@@ -20,6 +20,12 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "/resources/assets/activities",
+                "output": "./activities"
+              },
               {
                 "glob": "**/*",
                 "input": "src/assets",
