@@ -21,6 +21,8 @@ export class Tab1Page {
   completedStages :number[] = [];
   activateConfetti: boolean = false;
 
+  checkedItemIds: number[] = [];
+
   jsConfetti!: JSConfetti;
 
   ngAfterViewInit() {
@@ -33,6 +35,7 @@ export class Tab1Page {
     this.selectedStage = stage;
     this.isCollapsed = true;
     const stageName = this.stageNameService.getStageName(this.selectedStage);
+    
   // when using json server
     //   this.checklistService.getChecklistByStage(stageName).then((checklist: ChecklistItem[]) => {
   //   this.checklist = checklist;
@@ -40,26 +43,51 @@ export class Tab1Page {
   // });
     const checklist = this.checklistService.getChecklistByStage(stageName);
     this.checklist = checklist;
-    this.checkboxCounter = 0
+    this.checkboxCounter = 0;
+
+    
+    
   }
 
   getStageName(stage: number): string {
     return this.stageNameService.getStageName(stage);
   }
 
-  onCheckboxChange(checked: any) {
-    if (checked){
-      this.checkboxCounter += 1;
+  onCheckboxChange(event: { id: number, checked: boolean }) {
+    // if (event.checked){
+    //   this.checkboxCounter += 1;
+    // } else {
+    //   this.checkboxCounter -= 1;
+    // }
+
+    if (event.checked) {
+      if (!this.checkedItemIds.includes(event.id)) {
+        this.checkedItemIds.push(event.id);
+      }
     } else {
-      this.checkboxCounter -= 1;
+      this.checkedItemIds = this.checkedItemIds.filter(itemId => itemId !== event.id);
     }
     
-    if(this.checkboxCounter === this.checklist.length){
+    // if(this.checkboxCounter === this.checklist.length){
+    //   this.activateConfetti = true;
+    //   this.jsConfetti.addConfetti();
+    //   this.completedStages.push(this.selectedStage)
+    //   console.log("yes")
+    // }
+
+    // Update counter
+    this.checkboxCounter = this.checklist.filter(item => this.checkedItemIds.includes(item.id)).length;
+
+    // Confetti logic
+    if (this.checkboxCounter === this.checklist.length) {
       this.activateConfetti = true;
       this.jsConfetti.addConfetti();
-      this.completedStages.push(this.selectedStage)
+      this.completedStages.push(this.selectedStage);
+    } else {
+      this.activateConfetti = false;
+      this.completedStages = this.completedStages.filter(stage => stage !== this.selectedStage);
     }
-    console.log((this.selectedStage in this.completedStages))
+
   }
 
   isStageCompleted(stage:number): boolean{
@@ -68,5 +96,9 @@ export class Tab1Page {
     } else {
       return false;
     }
+  }
+
+  isChecked(id: number): boolean {
+    return this.checkedItemIds.includes(id);
   }
 }

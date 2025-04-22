@@ -4,4 +4,5 @@ export interface ChecklistItem {
     task: string;
     link?: string;
     description: string;
+    checked?: boolean;
 }
