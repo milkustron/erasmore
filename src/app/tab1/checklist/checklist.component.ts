@@ -1,41 +1,38 @@
-import { Component, EventEmitter, Input, Output, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';  
-import { IonicModule } from '@ionic/angular';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ChecklistItem } from './checklist-item';
-import { DetailsComponent } from './details/details.component';
+import { IonicModule } from '@ionic/angular';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-checklist',
-  imports: [IonicModule, DetailsComponent, CommonModule],
   templateUrl: './checklist.component.html',
+  imports: [IonicModule, CommonModule],
   styleUrls: ['./checklist.component.scss']
 })
 export class ChecklistComponent {
-  @Input() stage: number = 0;
   @Input() checklistItem!: ChecklistItem;
-  
-  @Output() checkboxChange = new EventEmitter<boolean>();
-  checked: boolean = false;
+  @Input() checked = false;
 
-  constructor() {}
+  @Output() checkboxChange = new EventEmitter<{ id: number, checked: boolean }>();
 
-  isDetailsVisible = false;
+  onItemClick(event: MouseEvent) {
+    // Don’t toggle when Learn More was clicked
+    if ((event.target as HTMLElement).closest('ion-button')) return;
 
-  showDetails() {
-	  this.isDetailsVisible = true;
+    this.checkboxChange.emit({ id: this.checklistItem.id, checked: !this.checked });
   }
 
-  hideDetails() {
-	  this.isDetailsVisible = false;
+  onCheckboxChange(event: any) {
+    const isChecked = event.detail.checked;
+    this.checkboxChange.emit({ id: this.checklistItem.id, checked: isChecked });
   }
 
-  onCheckboxChange() {
-    if (this.checked){
-      this.checkboxChange.emit(false);
-      this.checked = false;
-    } else {
-      this.checkboxChange.emit(true);
-      this.checked = true;
-    }
+  checkLink(): boolean {
+    return !!this.checklistItem.link;
+  }
+
+  open(event: MouseEvent) {
+    event.stopPropagation();
+    window.open(this.checklistItem.link, '_blank');
   }
 }

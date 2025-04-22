@@ -1,7 +1,7 @@
 <div class="popup-overlay" (click)="closeDetails()">
   <div class="popup-content" (click)="$event.stopPropagation()">
 	<p>{{description}}</p>
-	<ion-button  *ngIf="checkLink()" class="proceed-button" (click)="open()">Proceed</ion-button>
+	<ion-button  *ngIf="checkLink()" class="proceed-button" (click)="open()">Learn More</ion-button>
 	<ion-button color="medium" (click)="closeDetails()">Close</ion-button>
   </div>
 </div>

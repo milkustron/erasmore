@@ -1,11 +1,20 @@
-<!--ion-card-header>
-  <ion-card-title>Checklist for {{stageName}}</ion-card-title>
-</ion-card-header-->
 <ion-card-content>
-  <ion-item>
-      <ion-checkbox slot="start" (ionChange)="onCheckboxChange()"></ion-checkbox>
-      <ion-label (click)="showDetails()">{{checklistItem.task}}</ion-label>
-  </ion-item>
-</ion-card-content>
+  <div class="checklist-row" (click)="onItemClick($event)">
+    <ion-item lines="none" class="checklist-item">
+      <ion-checkbox
+        slot="start"
+        [checked]="checked"
+        (click)="$event.stopPropagation()">
+      </ion-checkbox>
+      <ion-label>{{ checklistItem.task }}</ion-label>
+    </ion-item>
 
-<app-details *ngIf="isDetailsVisible" (close)="hideDetails()" [link]="checklistItem.link" [description]="checklistItem.description + checklistItem.task"></app-details>
+    <ion-button
+      size="small"
+      class="learn-more-btn"
+      *ngIf="checkLink()"
+      (click)="open($event)">
+      Learn More
+    </ion-button>
+  </div>
+</ion-card-content>

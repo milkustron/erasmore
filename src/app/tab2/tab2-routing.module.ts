@@ -6,7 +6,8 @@ const routes: Routes = [
   {
     path: '',
     component: Tab2Page,
-  }
+  },
+  { path: 'highlight-details/:id', loadChildren: () => import('./highlight-details/highlight-details.module').then(m => m.HighlightDetailsPageModule) }
 ];
 
 @NgModule({
