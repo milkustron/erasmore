@@ -1,33 +1,12 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      <span style="color: var(--ion-color-primary);">Eras</span>
+      <span style="color: var(--ion-color-secondary);">more</span></ion-title>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content class="ion-padding">
-<!-- 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Top Highlights</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-list>
-        <ion-item>🌋 Roque Nublo – A majestic volcanic rock and popular hiking destination</ion-item>
-        <ion-item>🏖️ Playa de las Canteras – The most famous beach in Las Palmas</ion-item>
-        <ion-item>🌄 Maspalomas Dunes – Stunning desert-like sand dunes</ion-item>
-        <ion-item>🏰 Vegueta – The historic old town of Las Palmas</ion-item>
-      </ion-list>
-    </ion-card-content>
-  </ion-card> -->
-
-  <!--ion-card>
-    <ion-card-header>
-      <ion-card-title>Top Activities</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-list>
-        <ion-item>🚶 Hiking in the mountains and nature parks</ion-item>
-        <ion-item>🚴 Cycling along scenic coastal roads</ion-item>
-        <ion-item>🌊 Surfing and snorkeling at the beaches</ion-item>
-        <ion-item>🍷 Trying Canarian wines and traditional food</ion-item>
-      </ion-list>
-    </ion-card-content>
-  </ion-card-->
-
   <ion-card *ngFor="let highlight of highlights" [routerLink]="['/highlight-details', highlight.id]" button="true">
     <ion-img [src]="highlight.image"></ion-img>
     <ion-card-header>
