@@ -13,10 +13,9 @@
       <ion-card-subtitle>{{specialPrice}}</ion-card-subtitle>
     </ion-card-header>
 
-    <ion-card-content>{{eventDescription}}</ion-card-content>
-    <ion-card-content>{{experience}}</ion-card-content>
-    <ion-card-content>{{included}}</ion-card-content>
-  </ion-card>
+    <ion-card-content *ngIf="eventDescription">{{eventDescription}}</ion-card-content>
+    <ion-card-content *ngIf="experience">{{experience}}</ion-card-content>
+    <ion-card-content *ngIf="included">Trip includes: {{included}}</ion-card-content></ion-card>
 
   <ion-grid>
     <ion-row>
