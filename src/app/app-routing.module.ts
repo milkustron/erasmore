@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterLink, RouterModule, RouterOutlet, Routes } from '@angular/router';
+import { EventPage } from './tab3/event/event.page';
 import { HighlightDetailsPage } from './tab2/highlight-details/highlight-details.page';
 
 const routes: Routes = [
@@ -10,7 +11,8 @@ const routes: Routes = [
   {
     path: 'highlight-details/:id', // ✅ this must match exactly
     component: HighlightDetailsPage
-  }
+  },
+  { path: 'event/:eventId', component: EventPage },
 ];
 @NgModule({
   imports: [
