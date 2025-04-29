@@ -44,9 +44,4 @@ export class EventPage implements OnInit {
     return found?.content;
   }
 
-  getRandomImages(directory: string){
-    
-  }
-
-
 }
