@@ -13,6 +13,7 @@ ASSETS_FOLDER = "../resources/assets/activities"
 WEB_DATA_FOLDER = "web_data"
 LOCALBIRD_URL = "https://localbirdinternational.com"
 EXPERIENCES_URL = f"{LOCALBIRD_URL}/experiences/"
+FILE = "html.parser"
 
 
 def save_request_to_file(url, filepath, mode="w+", encoding="utf-8"):
@@ -27,7 +28,7 @@ def fetch_experiences():
 
 def fetch_activities(time_between_downloads=60):
     with open(f"{WEB_DATA_FOLDER}/experiences.html", encoding="utf-8") as experiences_file:
-        experiences_soup = BeautifulSoup(experiences_file, "html.parser")
+        experiences_soup = BeautifulSoup(experiences_file, FILE)
         list_elements = experiences_soup.find_all(class_="product")
         for activity in list_elements:
             activity_name = activity.find("h2").text.replace(':', ' -')
@@ -47,7 +48,7 @@ def fetch_activities(time_between_downloads=60):
 
 def fetch_thumbnails(time_between_downloads=60):
     with open(f"{WEB_DATA_FOLDER}/experiences.html", encoding="utf-8") as experiences_file:
-        experiences_soup = BeautifulSoup(experiences_file, "html.parser")
+        experiences_soup = BeautifulSoup(experiences_file, FILE)
         list_elements = experiences_soup.find_all(class_="product")
         for activity in list_elements:
             activity_name = activity.find("h2").text.replace(':', ' -')
@@ -77,7 +78,7 @@ def fetch_activity_gallery_images(time_between_downloads=60):
             continue
 
         with open(f"{activity_path}/activity.html", encoding="utf-8") as activity_file:
-            activity_soup = BeautifulSoup(activity_file, "html.parser")
+            activity_soup = BeautifulSoup(activity_file, FILE)
 
             gallery_container = activity_soup.find("div", class_="woocommerce-product-gallery")
             gallery_img_containers = activity_soup.find_all("div", class_="woocommerce-product-gallery__image")
@@ -132,7 +133,7 @@ def generate_activity_json():
             continue
         activities_dict[activity_name] = dict()
         with open(f"{activity_path}/activity.html", encoding="utf-8") as activity_file:
-            activity_soup = BeautifulSoup(activity_file, "html.parser")
+            activity_soup = BeautifulSoup(activity_file, FILE)
             activities_dict[activity_name]["description_fields"] = parse_activity_data(activity_soup)
             activities_dict[activity_name]["tags"] = parse_activity_tags(activity_soup)
     with open(f"{DATA_FOLDER}/activities.json", "w+", encoding="utf-8") as activities_json:
