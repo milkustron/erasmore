@@ -14,13 +14,15 @@ type dtp = {
   name: string;   
   content: string;
 }
+
 @Component({
-  selector: 'app-tab3',
-  templateUrl: 'tab3.page.html',
-  styleUrls: ['tab3.page.scss'],
+  selector: 'app-activities',
+  templateUrl: 'activities.page.html',
+  styleUrls: ['activities.page.scss'],
   standalone: false,
 })
-export class Tab3Page {
+
+export class ActivitiesPage {
   events: Event[] = [];
   numberOfEvents: number = 10; // Default number of events
   dataToPass: dtp[][]=[];  //format will be: name, image dir and desc fields 
