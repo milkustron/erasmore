@@ -3,12 +3,12 @@ import { Title } from '@angular/platform-browser';
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-tab2',
-  templateUrl: 'tab2.page.html',
-  styleUrls: ['tab2.page.scss'],
+  selector: 'app-guides',
+  templateUrl: 'guides.page.html',
+  styleUrls: ['guides.page.scss'],
   standalone: false,
 })
-export class Tab2Page {
+export class GuidesPage {
 
   constructor(private router: Router) {}
 

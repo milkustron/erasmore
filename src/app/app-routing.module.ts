@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterLink, RouterModule, RouterOutlet, Routes } from '@angular/router';
-import { EventPage } from './tab3/event/event.page';
-import { HighlightDetailsPage } from './tab2/highlight-details/highlight-details.page';
+import { EventPage } from './activities/event/event.page';
+import { HighlightDetailsPage } from './guides/highlight-details/highlight-details.page';
 
 const routes: Routes = [
   {
