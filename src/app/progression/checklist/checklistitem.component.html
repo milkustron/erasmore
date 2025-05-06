@@ -1,0 +1,31 @@
+<ion-card-content>
+  <div
+    class="checklist-row"
+    role="button"
+    tabindex="0"
+    (click)="onItemClick($event)"
+    (keydown)="onRowKeydown($event)"
+  >
+    <ion-item lines="none" class="checklist-item">
+      <ion-checkbox
+        slot="start"
+        [checked]="checked"
+        (ionChange)="onCheckboxChange($event)"
+        (click)="$event.stopPropagation()"
+      ></ion-checkbox>
+      <ion-label>{{ checklistItem.task }}</ion-label>
+    </ion-item>
+
+    <ion-button
+      *ngIf="checkLink()"
+      class="learn-more-btn"
+      role="button"
+      tabindex="0"
+      size="small"
+      (click)="open($event)"
+      (keydown)="onLearnMoreKeydown($event)"
+    >
+      Learn More
+    </ion-button>
+  </div>
+</ion-card-content>

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ChecklistItem } from '../tab1/checklist/checklist-item';
+import { ChecklistItem } from '../progression/checklist/checklist-item';
 
 @Injectable({
   providedIn: 'root'

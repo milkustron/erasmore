@@ -2,11 +2,11 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Tab1Page } from './tab1.page';
+import { ProgressionPage } from './progression.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
-import { ChecklistComponent } from './checklist/checklist.component';
+import { ChecklistitemComponent } from './checklist/checklistitem.component';
 
-import { Tab1PageRoutingModule } from './tab1-routing.module';
+import { ProgessionPageRoutingModule } from './progression-routing.module';
 
 @NgModule({
   imports: [
@@ -14,9 +14,9 @@ import { Tab1PageRoutingModule } from './tab1-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    Tab1PageRoutingModule,
-    ChecklistComponent
+    ProgessionPageRoutingModule,
+    ChecklistitemComponent
   ],
-  declarations: [Tab1Page]
+  declarations: [ProgressionPage]
 })
-export class Tab1PageModule {}
+export class ProgressionPageModule {}

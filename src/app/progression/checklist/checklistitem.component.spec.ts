@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { ChecklistComponent } from './checklist.component';
+import { ChecklistitemComponent } from './checklistitem.component';
 
 describe('ChecklistComponent', () => {
-  let component: ChecklistComponent;
-  let fixture: ComponentFixture<ChecklistComponent>;
+  let component: ChecklistitemComponent;
+  let fixture: ComponentFixture<ChecklistitemComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ChecklistComponent ],
+      declarations: [ ChecklistitemComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ChecklistComponent);
+    fixture = TestBed.createComponent(ChecklistitemComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

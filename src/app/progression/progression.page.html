@@ -68,10 +68,10 @@
 </div>
 
   <ion-card id="checklist" class="checklist" [class.collapsed]="isCollapsed" *ngIf="selectedStage && isCollapsed">
-    <app-checklist
+    <app-checklistitem
     *ngFor="let item of checklist"
     [checklistItem]="item"
     [checked]="isChecked(item.id)"
     (checkboxChange)="onCheckboxChange($event)"
-  ></app-checklist></ion-card>
+  ></app-checklistitem></ion-card>
 </ion-content>

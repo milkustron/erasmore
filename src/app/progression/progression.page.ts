@@ -6,12 +6,12 @@ import { ChecklistService } from '../services/checklist.service';
 import JSConfetti from 'js-confetti';
 
 @Component({
-  selector: 'app-tab1',
-  templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss'],
+  selector: 'app-progression',
+  templateUrl: 'progression.page.html',
+  styleUrls: ['progression.page.scss'],
   standalone: false,
 })
-export class Tab1Page {
+export class ProgressionPage {
   selectedStage: number = -1;
   isCollapsed: boolean = false;
   checklist: ChecklistItem[] = [];
