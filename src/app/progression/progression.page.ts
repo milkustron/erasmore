@@ -4,6 +4,7 @@ import { ChecklistItem } from './checklist/checklist-item';
 import { ChecklistService } from '../services/checklist.service';
 
 import JSConfetti from 'js-confetti';
+import { navigationControl } from '../tabs/navigation-control';
 
 @Component({
   selector: 'app-progression',
@@ -94,26 +95,6 @@ export class ProgressionPage {
     } else {
       this.checkedItemsPerStage[this.selectedStage] = currentChecked.filter(itemId => itemId !== event.id);
     }
-    
-    // if(this.checkboxCounter === this.checklist.length){
-    //   this.activateConfetti = true;
-    //   this.jsConfetti.addConfetti();
-    //   this.completedStages.push(this.selectedStage)
-    //   console.log("yes")
-    // }
-
-    // // Update counter
-    // this.checkboxCounter = this.checklist.filter(item => this.checkedItemIds.includes(item.id)).length;
-
-    // // Confetti logic
-    // if (this.checkboxCounter === this.checklist.length) {
-    //   this.activateConfetti = true;
-    //   this.jsConfetti.addConfetti();
-    //   this.completedStages.push(this.selectedStage);
-    // } else {
-    //   this.activateConfetti = false;
-    //   this.completedStages = this.completedStages.filter(stage => stage !== this.selectedStage);
-    // }
 
      // Update counter
      const allChecked = this.checklist.every(item =>
@@ -169,24 +150,8 @@ onKeydown(event: KeyboardEvent, idx: number) {
 
     if (!btns.length) return;
 
-    let newIndex: number;
-    switch (event.key) {
-      case 'ArrowRight':
-      case 'ArrowDown':
-        newIndex = idx + 1 < btns.length ? idx + 1 : 0;
-        break;
-      case 'ArrowLeft':
-      case 'ArrowUp':
-        newIndex = idx - 1 >= 0 ? idx - 1 : btns.length - 1;
-        break;
-      case 'Enter':
-      case ' ':
-        event.preventDefault();
-        btns[idx].nativeElement.click();
-        return;
-      default:
-        return;
-    }
+    let newIndex = navigationControl(event,idx, btns);
+    if (newIndex === -1) return;
 
     event.preventDefault();
     // repaint tabindex

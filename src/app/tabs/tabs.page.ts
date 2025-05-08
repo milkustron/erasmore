@@ -1,4 +1,5 @@
 import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
+import { navigationControl } from './navigation-control';
 
 @Component({
   selector: 'app-tabs',
@@ -44,28 +45,8 @@ export class TabsPage {
       }
     }
   
-    let newIndex: number;
-  
-    switch (event.key) {
-      case 'ArrowRight':
-      case 'ArrowDown':
-        newIndex = idx + 1 < btns.length ? idx + 1 : 0;
-        break;
-  
-      case 'ArrowLeft':
-      case 'ArrowUp':
-        newIndex = idx - 1 >= 0 ? idx - 1 : btns.length - 1;
-        break;
-  
-      case 'Enter':
-      case ' ':
-        event.preventDefault();
-        btns[idx].nativeElement.click();
-        return;
-  
-      default:
-        return;
-    }
+    let newIndex = navigationControl(event,idx, btns);
+    if (newIndex === -1) return;
   
     event.preventDefault();
     btns[idx].nativeElement.setAttribute('tabindex', '-1');
