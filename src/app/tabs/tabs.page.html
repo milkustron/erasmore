@@ -1,17 +1,17 @@
 <ion-tabs>
 
   <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="progression" href="/tabs/progression">
+    <ion-tab-button #tabBtn tab="progression" href="/tabs/progression" (keydown)="onTabKeydown($event, 0)">
       <ion-icon aria-hidden="true" name="analytics-outline"></ion-icon>
       <ion-label>Progress</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="guides" href="/tabs/guides">
+    <ion-tab-button #tabBtn tab="guides" href="/tabs/guides" (keydown)="onTabKeydown($event, 1)">
       <ion-icon aria-hidden="true" name="book-outline"></ion-icon>
       <ion-label>Guides</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="activities" href="/tabs/activities">
+    <ion-tab-button #tabBtn tab="activities" href="/tabs/activities" (keydown)="onTabKeydown($event, 2)">
       <ion-icon aria-hidden="true" name="caret-forward-circle-outline"></ion-icon>
       <ion-label>Activities</ion-label>
     </ion-tab-button>

@@ -24,7 +24,9 @@ export class ChecklistitemComponent
   /**
    * 1) Anywhere you hit ↓/↑ with no row focused, jump into the list
    */
-  @HostListener('document:keydown', ['$event'])
+  @Output() navigateUpToStages = new EventEmitter<void>();
+  @Output() navigateDownToTabs = new EventEmitter<void>();
+
   handleInitialArrow(event: KeyboardEvent) {
     if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') return;
 
@@ -74,31 +76,51 @@ export class ChecklistitemComponent
    * 2) When a row <div> is focused: ↑/↓ to move or leave list, Enter/Space to toggle
    */
   onRowKeydown(event: KeyboardEvent) {
-    const el = event.currentTarget as HTMLElement;
-    const rows = Array.from(
-      document.querySelectorAll<HTMLElement>('.checklist-row')
-    );
-    const idx = rows.indexOf(el);
+    const row = event.currentTarget as HTMLElement;
+    const rows = Array.from(document.querySelectorAll<HTMLElement>('.checklist-row'));
+    const idx  = rows.indexOf(row);
+    const learnBtn = row.querySelector<HTMLElement>('.learn-more-btn');
 
-    if (event.key === 'ArrowDown') {
-      event.preventDefault();
-      if (idx < rows.length - 1) {
-        rows[idx + 1].focus();
-      } else {
-        this.focusActiveStageButton();
+    switch (event.key) {
+      case 'ArrowRight':
+        // if this row has a Learn More button, focus it
+        if (learnBtn) {
+          event.preventDefault();
+          learnBtn.focus();
+        }
+        break;
+      
+      case 'ArrowLeft':
+      // if this row has a Learn More button, focus it
+      if (learnBtn) {
+        event.preventDefault();
+        rows[idx].focus();
       }
+      break;
 
-    } else if (event.key === 'ArrowUp') {
-      event.preventDefault();
-      if (idx > 0) {
-        rows[idx - 1].focus();
-      } else {
-        this.focusActiveStageButton();
-      }
+      case 'ArrowDown':
+        event.preventDefault();
+        if (idx < rows.length - 1) {
+          rows[idx + 1].focus();
+        } else {
+          this.navigateDownToTabs.emit();
+        }
+        break;
 
-    } else if (event.key === 'Enter' || event.key === ' ') {
-      event.preventDefault(); // stop scrolling on Space
-      this.onItemClick(event);
+      case 'ArrowUp':
+        event.preventDefault();
+        if (idx > 0) {
+          rows[idx - 1].focus();
+        } else {
+          this.navigateUpToStages.emit();
+        }
+        break;
+
+      case 'Enter':
+      case ' ':
+        event.preventDefault();
+        this.onItemClick(event);
+        break;
     }
   }
 

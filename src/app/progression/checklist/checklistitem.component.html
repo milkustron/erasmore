@@ -6,7 +6,7 @@
     (click)="onItemClick($event)"
     (keydown)="onRowKeydown($event)"
   >
-    <ion-item lines="none" class="checklist-item">
+    <ion-item lines="none" class="checklist-item" tabindex="-1">
       <ion-checkbox
         slot="start"
         [checked]="checked"

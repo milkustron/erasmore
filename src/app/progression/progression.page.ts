@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, ElementRef, HostListener, inject, QueryList, ViewChildren } from '@angular/core';
 import { StageNameService } from '../services/stage-name.service';
 import { ChecklistItem } from './checklist/checklist-item';
 import { ChecklistService } from '../services/checklist.service';
@@ -27,6 +27,12 @@ export class ProgressionPage {
 
   ngAfterViewInit() {
     this.jsConfetti = new JSConfetti();
+
+    this.repaintTabindexes(this.focusIndex);
+  }
+
+  setFocusIndex(idx: number) {
+    this.focusIndex = idx;
   }
 
   constructor(private stageNameService: StageNameService) {}
@@ -143,4 +149,94 @@ export class ProgressionPage {
   isChecked(id: number): boolean {
     return this.checkedItemsPerStage[this.selectedStage]?.includes(id) ?? false;
   }
+
+  @ViewChildren('stageBtn', { read: ElementRef })
+  stageButtons!: QueryList<ElementRef<HTMLElement>>;
+
+  focusIndex = 0;     
+
+onKeydown(event: KeyboardEvent, idx: number) {
+    const btns = this.stageButtons.toArray();
+
+    if (event.key === 'ArrowDown' && this.isCollapsed) {
+      event.preventDefault();
+      const firstRow = document.querySelector<HTMLElement>('.checklist-row');
+      if (firstRow) {
+        firstRow.focus();
+      }
+      return;
+    }
+
+    if (!btns.length) return;
+
+    let newIndex: number;
+    switch (event.key) {
+      case 'ArrowRight':
+      case 'ArrowDown':
+        newIndex = idx + 1 < btns.length ? idx + 1 : 0;
+        break;
+      case 'ArrowLeft':
+      case 'ArrowUp':
+        newIndex = idx - 1 >= 0 ? idx - 1 : btns.length - 1;
+        break;
+      case 'Enter':
+      case ' ':
+        event.preventDefault();
+        btns[idx].nativeElement.click();
+        return;
+      default:
+        return;
+    }
+
+    event.preventDefault();
+    // repaint tabindex
+    btns[idx].nativeElement.setAttribute('tabindex', '-1');
+    btns[newIndex].nativeElement.setAttribute('tabindex', '0');
+    btns[newIndex].nativeElement.focus();
+    this.focusIndex = newIndex;
+  }
+
+  focusStageNav() {
+    // compute which button is “active” (0-based)
+    const idx = this.selectedStage - 1;
+    this.focusIndex = idx;
+    this.repaintTabindexes(idx);
+    // finally focus it
+    this.stageButtons.toArray()[idx].nativeElement.focus();
+  }
+
+  focusTabsNav() {
+    // find the <ion-tab-bar> element
+    const tabBarEl = document.querySelector('ion-tab-bar') as HTMLElement & { shadowRoot?: ShadowRoot };
+    if (!tabBarEl) {
+      console.warn('No <ion-tab-bar> found');
+      return;
+    }
+  
+    // first try to pierce into its shadowRoot
+    const hostBtn = tabBarEl.shadowRoot
+      // look for the tab-button with your current route's tab attribute
+      ?.querySelector<HTMLElement>('ion-tab-button[tab="progression"]')
+      // fallback to light-DOM if it wasn't in the shadow
+      ?? document.querySelector<HTMLElement>('ion-tab-button[tab="progression"]');
+  
+    if (!hostBtn) {
+      console.warn('No ion-tab-button[tab="progression"] found');
+      return;
+    }
+  
+    // ensure it can receive focus
+    hostBtn.setAttribute('tabindex', '0');
+    hostBtn.focus();
+  }
+
+
+  private repaintTabindexes(activeIndex: number) {
+    this.stageButtons
+      .toArray()
+      .forEach((b, i) =>
+        b.nativeElement.setAttribute('tabindex', i === activeIndex ? '0' : '-1')
+      );
+  }
+
 }
