@@ -282,7 +282,7 @@
         <mxCell id="jhWllxGD8G7iUb_IJzXl-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=-0.005;exitY=-0.275;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="jhWllxGD8G7iUb_IJzXl-11" target="jhWllxGD8G7iUb_IJzXl-28">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jhWllxGD8G7iUb_IJzXl-1" value="ProgressionPage" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+        <mxCell id="jhWllxGD8G7iUb_IJzXl-1" value="ProgressionPage" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
           <mxGeometry x="-150" y="360" width="340" height="460" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
